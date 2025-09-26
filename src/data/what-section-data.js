@@ -4,49 +4,53 @@ export const missions = [
   {
     id: 1,
     icon: DollarSign,
-    title: "Kinh tế",
-    subtitle: "Xóa bỏ tư hữu, xây dựng công hữu",
+    title: "Phong trào cách mạng thế giới",
+    subtitle: "Tham gia và cổ vũ phong trào chống đế quốc, bảo vệ hòa bình, dân chủ và CNXH",
     description:
-      "Thay thế chế độ tư hữu tư liệu sản xuất bằng chế độ công hữu, loại bỏ nguồn gốc của sự bóc lột và bất bình đẳng xã hội, tạo nền tảng kinh tế cho sự phát triển bình đẳng của toàn xã hội.",
+      `- Góp phần đánh bại thực dân, phát xít.
+        - Truyền cảm hứng và hỗ trợ các dân tộc bị áp bức đứng lên tự giải phóng.`,
     color: "from-emerald-500 to-emerald-600",
     bgColor: "bg-emerald-50",
     textColor: "text-emerald-800",
-    tags: ["Công hữu hóa", "Xóa bỏ tư hữu", "Kinh tế xã hội chủ nghĩa"],
+    tags: ["Chống đế quốc", "Giải phóng dân tộc", "Hòa bình – dân chủ"],
   },
   {
     id: 2,
     icon: Building,
     title: "Chính trị",
-    subtitle: "Thiết lập nhà nước của nhân dân lao động",
+    subtitle: "Kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo thế chính trị – ngoại giao thuận lợi",
     description:
-      "Xây dựng nhà nước kiểu mới do giai cấp công nhân lãnh đạo, thể hiện quyền lực của nhân dân lao động, thay thế máy móc nhà nước tư sản, đảm bảo quyền làm chủ thực sự của người lao động.",
+      `- Liên kết phong trào cách mạng thế giới để giành thắng lợi.
+        - Tranh thủ sự ủng hộ quốc tế cho độc lập và thống nhất đất nước.`,
     color: "from-blue-500 to-blue-600",
     bgColor: "bg-blue-50",
     textColor: "text-blue-800",
-    tags: ["Chuyên chính vô sản", "Quyền làm chủ", "Nhà nước công nhân"],
+    tags: ["Sức mạnh thời đại", "Ngoại giao cách mạng", "Kết hợp dân tộc – quốc tế"],
   },
   {
     id: 3,
     icon: Users,
-    title: "Xã hội",
-    subtitle: "Xóa bỏ bóc lột, công bằng – dân chủ – văn minh",
+    title: "Quan hệ quốc tế",
+    subtitle: "Xây dựng khối đoàn kết khu vực và toàn cầu, tranh thủ sự giúp đỡ quốc tế",
     description:
-      "Xóa bỏ mọi hình thức bóc lột con người bởi con người, xây dựng xã hội công bằng, dân chủ và văn minh, nơi mọi người được phát triển toàn diện và hưởng thụ thành quả lao động một cách bình đẳng.",
+      `- Thành lập các mặt trận đoàn kết: Việt – Miên – Lào; Á – Phi; phong trào nhân dân thế giới.
+        - Nhận hỗ trợ chính trị, vật chất và tinh thần từ bạn bè quốc tế.`,
     color: "from-red-500 to-red-600",
     bgColor: "bg-red-50",
     textColor: "text-red-800",
-    tags: ["Xóa bỏ bóc lột", "Công bằng xã hội", "Dân chủ"],
+    tags: ["Đoàn kết khu vực", "Liên minh nhân dân thế giới", "Hỗ trợ quốc tế"],
   },
   {
     id: 4,
     icon: BookOpen,
-    title: "Văn hóa – Tư tưởng",
-    subtitle: "Xây dựng hệ giá trị mới, phát triển con người",
+    title: "Giá trị nhân văn – quốc tế",
+    subtitle: "Gắn chủ nghĩa yêu nước với chủ nghĩa quốc tế trong sáng, đề cao hòa bình và công lý",
     description:
-      "Tạo ra hệ giá trị văn hóa, đạo đức mới phù hợp với xã hội xã hội chủ nghĩa, phát triển con người toàn diện về trí tuệ, thể chất và tinh thần, xóa bỏ tư tưởng cá nhân chủ nghĩa tư sản.",
+      `- Khẳng định quyền tự quyết của các dân tộc.
+        - Thúc đẩy hợp tác bình đẳng, tôn trọng lẫn nhau.`,
     color: "from-purple-500 to-purple-600",
     bgColor: "bg-purple-50",
     textColor: "text-purple-800",
-    tags: ["Giá trị mới", "Phát triển toàn diện", "Văn hóa xã hội chủ nghĩa"],
+    tags: ["Quốc tế trong sáng", "Hòa bình – công lý", "Quyền tự quyết"],
   },
 ];
