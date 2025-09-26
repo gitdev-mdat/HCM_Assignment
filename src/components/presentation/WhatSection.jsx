@@ -10,11 +10,10 @@ const WhatSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Nội dung sứ mệnh lịch sử
+            Nội dung đoàn kết quốc tế
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Bốn lĩnh vực cốt lõi trong sứ mệnh giải phóng nhân loại của giai cấp
-            công nhân
+            Bốn phương diện cốt lõi thể hiện tư tưởng đoàn kết quốc tế của Hồ Chí Minh
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
@@ -49,7 +48,7 @@ const WhatSection = () => {
                       </h4>
                     </div>
 
-                    <p className="text-gray-600 leading-relaxed mb-6">
+                    <p className="text-gray-600 leading-relaxed mb-6 whitespace-pre-line">
                       {mission.description}
                     </p>
 
@@ -86,14 +85,7 @@ const WhatSection = () => {
               Mục tiêu cuối cùng
             </h4>
             <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed text-lg">
-              Thông qua việc thực hiện sứ mệnh lịch sử trong bốn lĩnh vực này,
-              giai cấp công nhân sẽ
-              <span className="font-semibold text-red-700">
-                {" "}
-                giải phóng hoàn toàn nhân loại
-              </span>
-              , xây dựng xã hội cộng sản chủ nghĩa - xã hội của sự thịnh vượng,
-              tự do và hạnh phúc cho tất cả mọi người.
+              Kết hợp sức mạnh dân tộc với sức mạnh thời đại, đoàn kết cùng các lực lượng tiến bộ toàn cầu để giành độc lập, thống nhất và góp phần vào cách mạng thế giới.
             </p>
           </div>
         </div>

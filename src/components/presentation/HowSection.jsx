@@ -9,11 +9,10 @@ const HowSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Điều kiện để thực hiện sứ mệnh
+            Điều kiện để phát huy đoàn kết quốc tế
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Ba điều kiện cần thiết để giai cấp công nhân hoàn thành sứ mệnh lịch
-            sử
+            Ba nguyên tắc then chốt để phát huy sức mạnh đoàn kết quốc tế
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
@@ -53,7 +52,7 @@ const HowSection = () => {
                     {condition.title}
                   </h3>
 
-                  <p className="text-gray-600 leading-relaxed mb-6">
+                  <p className="text-gray-600 leading-relaxed mb-6 whitespace-pre-line">
                     {condition.description}
                   </p>
 
@@ -93,28 +92,28 @@ const HowSection = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
               <div className="flex items-center gap-2">
                 <Shield className="w-6 h-6 text-red-600" />
-                <span className="text-gray-700 font-medium">Đảng lãnh đạo</span>
+                <span className="text-gray-700 font-medium">Giữ vững độc lập, tự chủ</span>
               </div>
               <div className="hidden md:block text-gray-400">→</div>
               <div className="flex items-center gap-2">
                 <Handshake className="w-6 h-6 text-blue-600" />
                 <span className="text-gray-700 font-medium">
-                  Liên minh giai cấp
+                  Nguyên tắc “có lý, có tình”
                 </span>
               </div>
               <div className="hidden md:block text-gray-400">→</div>
               <div className="flex items-center gap-2">
                 <Megaphone className="w-6 h-6 text-green-600" />
                 <span className="text-gray-700 font-medium">
-                  Phong trào quần chúng
+                  Giương cao ba ngọn cờ
                 </span>
               </div>
             </div>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-              Ba điều kiện này phải được thực hiện đồng bộ và bổ trợ lẫn nhau để
+              Ba điều kiện này phải được triển khai đồng bộ và bổ trợ lẫn nhau để bảo đảm
               <span className="font-semibold text-gray-800">
                 {" "}
-                đảm bảo thành công của sứ mệnh lịch sử
+                phát huy tối đa sức mạnh đoàn kết quốc tế, đưa cách mạng Việt Nam đến thắng lợi và đóng góp cho phong trào cách mạng thế giới.
               </span>
               .
             </p>
