@@ -57,11 +57,10 @@ const ImpactSection = () => {
               </div>
             </div>
             <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
-              Ở Việt Nam: Vai trò lãnh đạo của giai cấp công nhân
+              Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc và đoàn kết quốc tế
             </h3>
             <p className="text-red-100 text-lg max-w-4xl mx-auto">
-              Thông qua Đảng Cộng sản Việt Nam trong công cuộc đổi mới và xây
-              dựng chủ nghĩa xã hội
+              "Đoàn kết là quy luật, là sức mạnh vô địch của cách mạng Việt Nam"
             </p>
           </div>
 
@@ -105,7 +104,7 @@ const ImpactSection = () => {
         <div className="bg-white rounded-2xl shadow-lg p-8 border border-red-100">
           <div className="text-center mb-8">
             <h4 className="text-2xl font-bold text-gray-800 mb-4">
-              Sứ mệnh của giai cấp công nhân Việt Nam
+              “Đại đoàn kết – Sức mạnh dân tộc và Thời đại trong tư tưởng Hồ Chí Minh”
             </h4>
             <div className="w-16 h-1 bg-red-500 mx-auto rounded-full mb-6"></div>
           </div>
@@ -123,14 +122,13 @@ const ImpactSection = () => {
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span>
-                    Xây dựng nền kinh tế thị trường định hướng xã hội chủ nghĩa
+                    Củng cố khối đại đoàn kết toàn dân.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span>
-                    Phát triển dân chủ xã hội chủ nghĩa, đảm bảo quyền làm chủ
-                    của nhân dân
+                    Chủ động, linh hoạt trong đoàn kết quốc tế, hội nhập toàn cầu.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -152,7 +150,7 @@ const ImpactSection = () => {
                 <li className="flex items-start gap-2">
                   <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
                   <span>
-                    Đưa Việt Nam trở thành nước phát triển, thu nhập cao
+                    Xây dựng Việt Nam hùng cường, sánh vai với các cường quốc năm châu.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
@@ -172,12 +170,12 @@ const ImpactSection = () => {
         <div className="mt-12 text-center">
           <div className="bg-gradient-to-r from-red-500 to-orange-500 text-white rounded-xl p-6">
             <p className="text-lg font-semibold">
-              Sứ mệnh lịch sử của giai cấp công nhân Việt Nam là
+              “Trong tư tưởng Hồ Chí Minh, sức mạnh vô địch của đại đoàn kết dân tộc kết hợp với sứ mệnh lịch sử của giai cấp công nhân chính là
               <span className="text-yellow-300">
                 {" "}
-                tiếp tục đổi mới, phát triển đất nước
+                nền tảng để Việt Nam phát triển hùng cường, 
               </span>
-              và góp phần vào sự nghiệp giải phóng nhân loại trên toàn thế giới.
+               đồng thời góp phần vào sự nghiệp hòa bình, công lý và tiến bộ của nhân loại.”
             </p>
           </div>
         </div>
