@@ -10,17 +10,17 @@ const WhatSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Nội dung đoàn kết quốc tế
+            Quy trình thực hiện
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Bốn phương diện cốt lõi thể hiện tư tưởng đoàn kết quốc tế của Hồ Chí Minh
+            Ba bước cơ bản trong quy trình thực hiện đại đoàn kết dân tộc và đoàn kết quốc tế
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Mission Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
-          {missions.map((mission, index) => {
+          {missions.map((mission) => {
             const IconComponent = mission.icon;
             return (
               <div
@@ -82,10 +82,15 @@ const WhatSection = () => {
               </div>
             </div>
             <h4 className="text-2xl font-bold text-gray-800 mb-4">
-              Mục tiêu cuối cùng
+              Tổng quan quy trình
             </h4>
             <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed text-lg">
-              Kết hợp sức mạnh dân tộc với sức mạnh thời đại, đoàn kết cùng các lực lượng tiến bộ toàn cầu để giành độc lập, thống nhất và góp phần vào cách mạng thế giới.
+              Ba bước thực hiện tuần tự và chặt chẽ từ
+              <span className="font-semibold text-red-700">
+                {" "}
+                liên minh cơ bản đến tổ chức Mặt trận và sự lãnh đạo của Đảng
+              </span>
+              , tạo nên sức mạnh đại đoàn kết toàn dân tộc vững chắc.
             </p>
           </div>
         </div>

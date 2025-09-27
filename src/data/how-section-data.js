@@ -3,39 +3,37 @@ export const conditions = [
   {
     id: 1,
     icon: Shield,
-    title: "Giữ vững độc lập, tự chủ",
+    title: "Truyền thống dân tộc",
     description:
-      `- Tự lực, tự cường là yếu tố quyết định vị thế quốc tế.
-        - Có độc lập thật sự mới tranh thủ được sự ủng hộ lâu dài của bạn bè quốc tế.`,
+      "Kế thừa truyền thống: yêu nước – nhân nghĩa – đoàn kết. Bài học từ lịch sử: 'Dân ta có một lòng nồng nàn yêu nước...'.",
     color: "from-red-500 to-red-600",
     bgColor: "bg-red-50",
     textColor: "text-red-800",
-    tags: ["Độc lập tự chủ", "Tự lực tự cường", "Nội lực quyết định"],
+    tags: ["Yêu nước", "Nhân nghĩa", "Truyền thống"],
     step: "01",
   },
   {
     id: 2,
     icon: Handshake,
-    title: "Nguyên tắc “có lý, có tình”",
+    title: "Lòng khoan dung, độ lượng",
     description:
-      `- Kiên định mục tiêu Mác – Lênin nhưng tôn trọng, hợp tác bình đẳng với các lực lượng tiến bộ.
-        - Dung hòa giữa lợi ích dân tộc và nghĩa vụ quốc tế.`,
+      "Hồ Chí Minh đề cao: trân trọng phần thiện dù nhỏ nhất, gác bỏ hận thù, đoàn kết cả những người từng đối lập. Quan điểm: 'Lấy chí công vô tư để cảm hóa con người'.",
     color: "from-blue-500 to-blue-600",
     bgColor: "bg-blue-50",
     textColor: "text-blue-800",
-    tags: ["Có lý có tình", "Bình đẳng hợp tác", "ôn trọng quốc tế"],
+    tags: ["Khoan dung", "Bao dung", "Cầu đồng"],
     step: "02",
   },
   {
     id: 3,
     icon: Megaphone,
-    title: "Giương cao ba ngọn cờ",
+    title: "Tin vào nhân dân",
     description:
-      "Độc lập dân tộc – Chủ nghĩa xã hội – Hòa bình và công lý là nền tảng để khẳng định vị thế Việt Nam.",
+      "Hồ Chí Minh khẳng định: 'Trong bầu trời không gì quý bằng nhân dân. Trong thế giới không gì mạnh bằng lực lượng đoàn kết của nhân dân'. Nhân dân là gốc rễ, nền tảng của khối đoàn kết.",
     color: "from-green-500 to-green-600",
     bgColor: "bg-green-50",
     textColor: "text-green-800",
-    tags: ["Độc lập dân tộc", "Chủ nghĩa xã hội", "Hòa bình – công lý"],
+    tags: ["Dân chủ", "Tin dân", "Dựa dân"],
     step: "03",
   },
 ];

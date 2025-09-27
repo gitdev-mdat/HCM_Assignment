@@ -4,53 +4,37 @@ export const missions = [
   {
     id: 1,
     icon: DollarSign,
-    title: "Phong trào cách mạng thế giới",
-    subtitle: "Tham gia và cổ vũ phong trào chống đế quốc, bảo vệ hòa bình, dân chủ và CNXH",
+    title: "Liên minh",
+    subtitle: "Công – Nông – Trí thức",
     description:
-      `- Góp phần đánh bại thực dân, phát xít.
-        - Truyền cảm hứng và hỗ trợ các dân tộc bị áp bức đứng lên tự giải phóng.`,
+      "Bước đầu tiên là xây dựng liên minh vững chắc giữa giai cấp công nhân, nông dân và đội ngũ trí thức, tạo nền tảng cho khối đại đoàn kết dân tộc.",
     color: "from-emerald-500 to-emerald-600",
     bgColor: "bg-emerald-50",
     textColor: "text-emerald-800",
-    tags: ["Chống đế quốc", "Giải phóng dân tộc", "Hòa bình – dân chủ"],
+    tags: ["Công nhân", "Nông dân", "Trí thức"],
   },
   {
     id: 2,
     icon: Building,
-    title: "Chính trị",
-    subtitle: "Kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo thế chính trị – ngoại giao thuận lợi",
+    title: "Mặt trận",
+    subtitle: "Tổ chức thành Mặt trận dân tộc thống nhất",
     description:
-      `- Liên kết phong trào cách mạng thế giới để giành thắng lợi.
-        - Tranh thủ sự ủng hộ quốc tế cho độc lập và thống nhất đất nước.`,
+      "Tập hợp, tổ chức các tầng lớp nhân dân, các tổ chức chính trị - xã hội thành Mặt trận dân tộc thống nhất rộng rãi trên cơ sở liên minh công-nông-trí.",
     color: "from-blue-500 to-blue-600",
     bgColor: "bg-blue-50",
     textColor: "text-blue-800",
-    tags: ["Sức mạnh thời đại", "Ngoại giao cách mạng", "Kết hợp dân tộc – quốc tế"],
+    tags: ["Tổ chức", "Thống nhất", "Đoàn kết"],
   },
   {
     id: 3,
     icon: Users,
-    title: "Quan hệ quốc tế",
-    subtitle: "Xây dựng khối đoàn kết khu vực và toàn cầu, tranh thủ sự giúp đỡ quốc tế",
+    title: "Lãnh đạo",
+    subtitle: "Đặt dưới sự lãnh đạo của Đảng",
     description:
-      `- Thành lập các mặt trận đoàn kết: Việt – Miên – Lào; Á – Phi; phong trào nhân dân thế giới.
-        - Nhận hỗ trợ chính trị, vật chất và tinh thần từ bạn bè quốc tế.`,
+      "Toàn bộ quá trình xây dựng khối đại đoàn kết phải đặt dưới sự lãnh đạo của Đảng Cộng sản Việt Nam - nhân tố quyết định mọi thắng lợi của cách mạng Việt Nam.",
     color: "from-red-500 to-red-600",
     bgColor: "bg-red-50",
     textColor: "text-red-800",
-    tags: ["Đoàn kết khu vực", "Liên minh nhân dân thế giới", "Hỗ trợ quốc tế"],
-  },
-  {
-    id: 4,
-    icon: BookOpen,
-    title: "Giá trị nhân văn – quốc tế",
-    subtitle: "Gắn chủ nghĩa yêu nước với chủ nghĩa quốc tế trong sáng, đề cao hòa bình và công lý",
-    description:
-      `- Khẳng định quyền tự quyết của các dân tộc.
-        - Thúc đẩy hợp tác bình đẳng, tôn trọng lẫn nhau.`,
-    color: "from-purple-500 to-purple-600",
-    bgColor: "bg-purple-50",
-    textColor: "text-purple-800",
-    tags: ["Quốc tế trong sáng", "Hòa bình – công lý", "Quyền tự quyết"],
-  },
+    tags: ["Lãnh đạo", "Định hướng", "Thắng lợi"],
+  }
 ];

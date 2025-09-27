@@ -33,27 +33,25 @@ const IntroSection = () => {
 
               {/* Title */}
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Giai cấp công nhân là gì?
+                Đại đoàn kết dân tộc
               </h3>
 
               {/* Description */}
               <p className="text-gray-600 leading-relaxed text-lg">
-                Giai cấp công nhân là những người lao động bán sức lao động của
-                mình để sinh sống, không sở hữu tư liệu sản xuất, tạo ra của cải
-                vật chất cho xã hội thông qua lao động trong các nhà máy, xí
-                nghiệp và các ngành công nghiệp.
+                Đoàn kết mọi tầng lớp, giai cấp, dân tộc, tôn giáo, không phân biệt quá khứ, 
+                miễn là yêu nước và vì lợi ích dân tộc.
               </p>
 
               {/* Key characteristics */}
               <div className="mt-6 flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                  Lao động trực tiếp
+                  Toàn dân
                 </span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                  Tập thể
+                  Toàn diện
                 </span>
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
-                  Kỷ luật cao
+                  Toàn cầu
                 </span>
               </div>
             </div>
@@ -75,26 +73,25 @@ const IntroSection = () => {
 
               {/* Title */}
               <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                Sứ mệnh lịch sử là gì?
+                Đoàn kết quốc tế
               </h3>
 
               {/* Description */}
               <p className="text-gray-600 leading-relaxed text-lg">
-                Sứ mệnh lịch sử của giai cấp công nhân là lãnh đạo cuộc đấu
-                tranh giải phóng toàn thể nhân loại khỏi chế độ bóc lột, xây
-                dựng xã hội xã hội chủ nghĩa và cộng sản chủ nghĩa.
+                Liên kết, hợp tác với các lực lượng cách mạng và tiến bộ trên thế giới 
+                để tạo sức mạnh thời đại.
               </p>
 
               {/* Mission goals */}
               <div className="mt-6 flex flex-wrap gap-2 justify-center">
                 <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
-                  Giải phóng
+                  Chiến lược
                 </span>
                 <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
-                  Lãnh đạo
+                  Động lực
                 </span>
                 <span className="px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">
-                  Cách mạng
+                  Cầu nối
                 </span>
               </div>
             </div>
