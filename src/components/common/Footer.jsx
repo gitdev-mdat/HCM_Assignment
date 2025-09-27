@@ -9,6 +9,7 @@ import {
   ExternalLink,
   Star,
 } from "lucide-react";
+import qrEbook from "../../assets/qr.png";
 
 const Footer = () => {
   const references = [
@@ -22,14 +23,20 @@ const Footer = () => {
   ];
 
   const teamMembers = [
-    { name: "AE tự điền", role: "Trưởng nhóm", id: "AE tự điền" },
-    { name: "AE tự điền", role: "Nghiên cứu nội dung", id: "AE tự điền" },
-    { name: "AE tự điền", role: "Thiết kế giao diện", id: "AE tự điền" },
-    { name: "AE tự điền", role: "Nghiên cứu nội dung", id: "AE tự điền" },
+    { name: "Thi Minh Đạt", role: "Trưởng nhóm", id: "SE184167" },
+    { name: "Nguyễn Ngọc Bảo Phúc", role: "Làm Quiz", id: "SE184167" },
+    { name: "Nguyễn Long Nguyễn", role: "Nghiên cứu nội dung", id: "SE161940" },
+    {
+      name: "Nguyễn Tuấn Kiệt",
+      role: "Nghiên cứu nội dung và làm Ebook",
+      id: "SE172079",
+    },
+    { name: "Chu Hữu Phước", role: "Nghiên cứu nội dung", id: "SE172185" },
+    { name: "Trần Hải Long", role: "Nghiên cứu nội dung", id: "SE150884" },
   ];
 
   return (
-    <footer className="bg-black  text-white">
+    <footer className="bg-black text-white">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -49,6 +56,34 @@ const Footer = () => {
                     7 Đ. D1, Long Thạnh Mỹ, Thủ Đức, Hồ Chí Minh
                   </p>
                 </div>
+              </div>
+
+              {/* QR block: visible, responsive, clickable */}
+              <div className="mt-4">
+                <a
+                  href={qrEbook}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-4 bg-gray-800 p-3 rounded-lg hover:scale-[1.02] transition-transform duration-150"
+                >
+                  <img
+                    src={qrEbook}
+                    alt="QR Ebook - Scan để tải ebook"
+                    className="w-20 h-20 object-cover rounded-md shadow-md flex-shrink-0"
+                  />
+                  <div className="text-left">
+                    <p className="font-semibold text-sm text-gray-100">
+                      Scan để tải eBook
+                    </p>
+                    <p className="text-xs text-gray-400">
+                      Ebook: "Tư tưởng Hồ Chí Minh về Đại đoàn kết dân tộc" (tài
+                      liệu tham khảo)
+                    </p>
+                    <p className="text-xs text-gray-500 mt-1">
+                      Mở ảnh → tải về
+                    </p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -133,7 +168,7 @@ const Footer = () => {
                 </h4>
               </div>
               <p className="text-green-100 text-sm">
-                Bài thuyết trình: "Sứ mệnh lịch sử của giai cấp công nhân"
+                Bài thuyết trình: "Tư tưởng Hồ Chí Minh về Đại đoàn kết dân tộc"
               </p>
               <p className="text-green-200 text-xs mt-1">Học kỳ Fall 2025</p>
             </div>

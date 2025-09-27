@@ -32,7 +32,7 @@ const FloatingChatButton = () => {
             {
               role: "system",
               content:
-                "Bạn là một trợ lý ảo cho một trang web học tập về môn Chủ nghĩa xã hội khoa học - Một phần của Triết học Marx-Lenin.",
+                "Bạn là một trợ lý ảo cho một trang web học tập về môn Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc và đại đoàn kết quốc tế.",
             },
             {
               role: "user",
