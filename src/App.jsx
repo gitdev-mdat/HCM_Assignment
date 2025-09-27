@@ -25,9 +25,6 @@ function App() {
         <IntroSection />
       </div>
       <div data-aos="fade-up">
-        <HowSection />
-      </div>
-      <div data-aos="fade-up">
         <WhySection />
       </div>
       <div data-aos="fade-up">
