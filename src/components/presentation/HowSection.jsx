@@ -9,11 +9,10 @@ const HowSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Điều kiện để thực hiện sứ mệnh
+            Điều kiện hình thành và phát triển
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Ba điều kiện cần thiết để giai cấp công nhân hoàn thành sứ mệnh lịch
-            sử
+            Ba điều kiện cơ bản để xây dựng và phát triển khối đại đoàn kết
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>

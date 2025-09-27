@@ -8,10 +8,10 @@ const WhySection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Vì sao giai cấp công nhân có sứ mệnh này?
+            Vì sao cần đoàn kết?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Cơ sở hình thành sứ mệnh lịch sử của giai cấp công nhân
+            Những lý do cơ bản cho sự cần thiết của đoàn kết dân tộc và quốc tế
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>

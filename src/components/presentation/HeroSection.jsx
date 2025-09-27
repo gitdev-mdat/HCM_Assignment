@@ -56,17 +56,17 @@ const HeroSection = () => {
           {/* Main Title */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight">
             <div data-aos="zoom-out-up">
-              <span className="block mb-2">Sứ mệnh lịch sử</span>
+              <span className="block mb-2">Tư tưởng Hồ Chí Minh về</span>
             </div>
             <div data-aos="zoom-out-up">
               <span className="block bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
-                của giai cấp công nhân
+                Đại đoàn kết dân tộc và Đoàn kết quốc tế
               </span>
             </div>
           </h1>
 
           {/* Subtitle/Message */}
-          <TextReveal text="Từ khổ đau đến lãnh đạo – Giai cấp công nhân và sứ mệnh lịch sử giải phóng nhân loại." />
+          <TextReveal text="Chiến lược cách mạng xuyên suốt, tạo nên sức mạnh tổng hợp để giành và giữ vững độc lập dân tộc, tiến lên chủ nghĩa xã hội" />
 
           {/* Decorative Line */}
           <div className="flex items-center justify-center mb-10">
