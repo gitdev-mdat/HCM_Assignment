@@ -15,9 +15,9 @@ export const reasons = [
   {
     id: 2,
     icon: TrendingUp,
-    title: "Mục tiêu - Nhiệm vụ - Chiến lược",
+    title: "Mục tiêu – Nhiệm vụ – Chiến lược",
     description:
-      "Đoàn kết là mục tiêu hàng đầu, là nhiệm vụ chiến lược của Đảng trong sự nghiệp cách mạng.",
+      "Đoàn kết là mục tiêu hàng đầu, là nhiệm vụ chiến lược của Đảng trong suốt quá trình cách mạng.",
     color: "from-red-500 to-red-600",
     bgColor: "bg-red-50",
     textColor: "text-red-800",
@@ -28,7 +28,7 @@ export const reasons = [
     icon: Users,
     title: "Dân tộc gắn liền quốc tế",
     description:
-      "Kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo nên sức mạnh tổng hợp cho sự phát triển.",
+      "Kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo nên sức mạnh tổng hợp trong công cuộc xây dựng và bảo vệ Tổ quốc.",
     color: "from-green-500 to-green-600",
     bgColor: "bg-green-50",
     textColor: "text-green-800",
@@ -39,7 +39,7 @@ export const reasons = [
     icon: Cog,
     title: "Xây dựng CNXH",
     description:
-      "Đoàn kết giúp khắc phục khó khăn, huy động nguồn lực, xây dựng chủ nghĩa xã hội và phát triển đất nước.",
+      "Đoàn kết giúp khắc phục khó khăn, huy động nguồn lực, xây dựng chủ nghĩa xã hội và phát triển đất nước bền vững.",
     color: "from-yellow-500 to-orange-500",
     bgColor: "bg-yellow-50",
     textColor: "text-yellow-800",

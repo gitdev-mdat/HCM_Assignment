@@ -66,7 +66,7 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle/Message */}
-          <TextReveal text="Chiến lược cách mạng xuyên suốt, tạo nên sức mạnh tổng hợp để giành và giữ vững độc lập dân tộc, tiến lên chủ nghĩa xã hội" />
+          <TextReveal text="Đại đoàn kết dân tộc và đoàn kết quốc tế là chiến lược cách mạng xuyên suốt, tạo nên sức mạnh tổng hợp" />
 
           {/* Decorative Line */}
           <div className="flex items-center justify-center mb-10">

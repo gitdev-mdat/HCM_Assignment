@@ -11,7 +11,7 @@ const WhySection = () => {
             Vì sao cần đoàn kết?
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Những lý do cơ bản cho sự cần thiết của đoàn kết dân tộc và quốc tế
+            Những lý do quan trọng cho việc xây dựng và phát huy sức mạnh đoàn kết
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
         </div>
@@ -71,15 +71,15 @@ const WhySection = () => {
                 <Users className="w-6 h-6 text-red-600" />
               </div>
             </div>
-            <h4 className="text-xl font-bold text-gray-800 mb-3">Kết luận</h4>
+            <h4 className="text-xl font-bold text-gray-800 mb-3">Tổng kết</h4>
             <p className="text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Chính những đặc điểm khách quan này đã quyết định sứ mệnh lịch sử
-              của giai cấp công nhân:
+              Đoàn kết dân tộc và đoàn kết quốc tế là:
               <span className="font-semibold text-red-700">
                 {" "}
-                lãnh đạo cuộc đấu tranh giải phóng toàn thể nhân loại
+                sức mạnh to lớn để xây dựng và bảo vệ Tổ quốc, phát triển đất nước
               </span>
-              và xây dựng xã hội mới.
+              {" "} 
+              trong thời đại toàn cầu hóa.
             </p>
           </div>
         </div>
