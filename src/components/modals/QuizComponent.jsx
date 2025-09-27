@@ -162,7 +162,7 @@ const QuizComponent = ({ isOpen, onClose }) => {
                 <div className="bg-purple-50 rounded-xl p-4 border border-purple-100">
                   <Award className="w-8 h-8 text-purple-600 mx-auto mb-2" />
                   <h3 className="font-semibold text-gray-800">Điểm đạt</h3>
-                  <p className="text-purple-600">≥ 30/50</p>
+                  <p className="text-purple-600">≥ 30/40</p>
                 </div>
               </div>
 
