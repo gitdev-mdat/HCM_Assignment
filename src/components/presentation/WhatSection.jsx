@@ -48,7 +48,7 @@ const WhatSection = () => {
                       </h4>
                     </div>
 
-                    <p className="text-gray-600 leading-relaxed mb-6">
+                    <p className="text-gray-600 leading-relaxed mb-6 whitespace-pre-line">
                       {mission.description}
                     </p>
 
