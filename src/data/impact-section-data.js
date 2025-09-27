@@ -14,9 +14,9 @@ export const impacts = [
   {
     id: 2,
     icon: TrendingUp,
-    title: "Định hướng sự phát triển tất yếu của lịch sử",
+    title: "Sứ mệnh",
     description:
-      "Chỉ ra con đường phát triển tất yếu từ xã hội tư bản chủ nghĩa đến xã hội cộng sản chủ nghĩa, mở ra kỷ nguyên mới trong lịch sử nhân loại.",
+      "Đưa dân tộc Việt Nam đi từ thắng lợi này đến thắng lợi khác, làm phong phú lý luận Mác – Lênin, trở thành bài học quý cho các dân tộc bị áp bức trên thế giới.",
     color: "from-green-500 to-green-600",
     bgColor: "bg-green-50",
     textColor: "text-green-800",
