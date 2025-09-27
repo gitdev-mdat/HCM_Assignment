@@ -92,28 +92,28 @@ const HowSection = () => {
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
               <div className="flex items-center gap-2">
                 <Shield className="w-6 h-6 text-red-600" />
-                <span className="text-gray-700 font-medium">Giữ vững độc lập, tự chủ</span>
+                <span className="text-gray-700 font-medium">Củng cố nội lực</span>
               </div>
               <div className="hidden md:block text-gray-400">→</div>
               <div className="flex items-center gap-2">
                 <Handshake className="w-6 h-6 text-blue-600" />
                 <span className="text-gray-700 font-medium">
-                  Nguyên tắc “có lý, có tình”
+                  Ngoại giao “có lý, có tình”
                 </span>
               </div>
               <div className="hidden md:block text-gray-400">→</div>
               <div className="flex items-center gap-2">
                 <Megaphone className="w-6 h-6 text-green-600" />
                 <span className="text-gray-700 font-medium">
-                  Giương cao ba ngọn cờ
+                  Lan tỏa giá trị Việt Nam
                 </span>
               </div>
             </div>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-              Ba điều kiện này phải được triển khai đồng bộ và bổ trợ lẫn nhau để bảo đảm
+              Ba bước này cần được tiến hành
               <span className="font-semibold text-gray-800">
                 {" "}
-                phát huy tối đa sức mạnh đoàn kết quốc tế, đưa cách mạng Việt Nam đến thắng lợi và đóng góp cho phong trào cách mạng thế giới.
+                đồng bộ và hỗ trợ lẫn nhau để phát huy tối đa sức mạnh đoàn kết quốc tế, nâng cao uy tín và vị thế của Việt Nam trên trường thế giới.
               </span>
               .
             </p>
