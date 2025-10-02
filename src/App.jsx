@@ -28,10 +28,10 @@ function App() {
         <WhySection />
       </div>
       <div data-aos="fade-up">
-        <WhatSection />
+        <HowSection />
       </div>
       <div data-aos="fade-up">
-        <HowSection />
+        <WhatSection />
       </div>
       <div data-aos="fade-up">
         <ImpactSection />
