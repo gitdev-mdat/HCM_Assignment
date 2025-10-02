@@ -1,125 +1,131 @@
-import React from "react";
+// src/components/presentation/HowSection.jsx
+import React, { useState } from "react";
 import { Shield, Handshake, Megaphone } from "lucide-react";
-import { conditions } from "../../data/how-section-data";
+import { detailedConditions } from "../../data/how-section-details";
+import DetailModal from "../common/DetailModal";
+
+const DEFAULT_GRAD = "from-cyan-500 to-teal-600";
 
 const HowSection = () => {
+  const [active, setActive] = useState(null);
+
   return (
-    <section className="py-16 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-16 bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Điều kiện để phát huy đoàn kết quốc tế
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Ba nguyên tắc then chốt để phát huy sức mạnh đoàn kết quốc tế
+            Ba nguyên tắc then chốt — nhấn vào "Xem chi tiết" để đọc giải thích,
+            ví dụ và nguồn.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
+          <div className="w-24 h-1 mx-auto mt-1 rounded-full bg-gradient-to-r from-cyan-400 to-teal-500" />
         </div>
 
-        {/* Conditions Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-          {conditions.map((condition, index) => {
-            const IconComponent = condition.icon;
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {detailedConditions.map((c) => {
+            const Icon =
+              c.icon ||
+              (c.id === "c1" ? Shield : c.id === "c2" ? Handshake : Megaphone);
+            const colorClass = c.colorClass || DEFAULT_GRAD;
+
             return (
-              <div
-                key={condition.id}
-                className="relative bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-100 group hover:-translate-y-1"
+              <article
+                key={c.id}
+                className="bg-white rounded-2xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition transform hover:-translate-y-1 flex flex-col justify-between min-h-[320px]"
               >
-                {/* Step Number */}
-                <div className="absolute -top-4 left-8">
+                <div className="flex items-start gap-4">
+                  {/* Icon / step badge */}
                   <div
-                    className={`w-12 h-12 bg-gradient-to-br ${condition.color} rounded-full flex items-center justify-center shadow-lg`}
+                    className={`w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0 bg-gradient-to-br ${colorClass}`}
+                    aria-hidden="true"
+                    title={`Bước ${c.step}`}
                   >
-                    <span className="text-white font-bold text-lg">
-                      {condition.step}
-                    </span>
+                    <Icon className="w-6 h-6" />
+                  </div>
+
+                  <div className="flex-1">
+                    <h3 className="text-lg font-semibold text-gray-800 leading-snug">
+                      {c.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 mt-2 leading-relaxed">
+                      {c.summary}
+                    </p>
                   </div>
                 </div>
 
-                {/* Icon Container */}
-                <div className="flex justify-center mb-6 mt-4">
-                  <div
-                    className={`w-20 h-20 bg-gradient-to-br ${condition.color} rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
-                  >
-                    <IconComponent className="w-10 h-10 text-white" />
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-gray-800 mb-4 leading-tight">
-                    {condition.title}
-                  </h3>
-
-                  <p className="text-gray-600 leading-relaxed mb-6 whitespace-pre-line">
-                    {condition.description}
-                  </p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 justify-center">
-                    {condition.tags.map((tag, tagIndex) => (
+                {/* Tags + CTA aligned to bottom */}
+                <div className="mt-6 mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {c.tags?.map((t, idx) => (
                       <span
-                        key={tagIndex}
-                        className={`px-3 py-1 ${condition.bgColor} ${condition.textColor} rounded-full text-sm font-medium`}
+                        key={idx}
+                        className="px-3 py-1 rounded-full text-xs bg-cyan-50 text-cyan-700"
                       >
-                        {tag}
+                        {t}
                       </span>
                     ))}
                   </div>
-                </div>
 
-                {/* Connecting Line (except last card) */}
-                {index < conditions.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-6 transform -translate-y-1/2">
-                    <div className="w-12 h-px bg-gradient-to-r from-gray-300 to-gray-400"></div>
-                    <div className="absolute right-0 top-1/2 transform translate-x-1 -translate-y-1/2">
-                      <div className="w-2 h-2 bg-gray-400 rounded-full"></div>
-                    </div>
+                  <div className="mt-5 flex items-center justify-between gap-3">
+                    <button
+                      onClick={() => setActive(c)}
+                      className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium shadow hover:brightness-95 transition focus:outline-none focus:ring-4 focus:ring-cyan-200"
+                      aria-label={`Xem chi tiết ${c.title}`}
+                    >
+                      Xem chi tiết
+                    </button>
+
+                    <a
+                      href={c.sources?.[0]?.url || "#"}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-sm text-gray-500 hover:underline"
+                    >
+                      Nguồn
+                    </a>
                   </div>
-                )}
-              </div>
+                </div>
+              </article>
             );
           })}
         </div>
 
-        {/* Process Flow Visualization */}
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl p-8 border border-gray-200">
-            <h4 className="text-xl font-bold text-gray-800 mb-4">
+        <div className="mt-12">
+          <div className="bg-gradient-to-r from-slate-50 to-slate-100 rounded-2xl p-6 border border-gray-200">
+            <h4 className="text-xl font-bold text-gray-800 mb-3">
               Quy trình thực hiện
             </h4>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-gray-700">
               <div className="flex items-center gap-2">
-                <Shield className="w-6 h-6 text-red-600" />
-                <span className="text-gray-700 font-medium">Củng cố nội lực</span>
+                <Shield className="w-6 h-6 text-cyan-600" />
+                <span>Giữ vững độc lập, tự chủ</span>
               </div>
               <div className="hidden md:block text-gray-400">→</div>
               <div className="flex items-center gap-2">
-                <Handshake className="w-6 h-6 text-blue-600" />
-                <span className="text-gray-700 font-medium">
-                  Ngoại giao “có lý, có tình”
-                </span>
+                <Handshake className="w-6 h-6 text-cyan-600" />
+                <span>Nguyên tắc “có lý, có tình”</span>
               </div>
               <div className="hidden md:block text-gray-400">→</div>
               <div className="flex items-center gap-2">
-                <Megaphone className="w-6 h-6 text-green-600" />
-                <span className="text-gray-700 font-medium">
-                  Lan tỏa giá trị Việt Nam
-                </span>
+                <Megaphone className="w-6 h-6 text-cyan-600" />
+                <span>Giương cao ba ngọn cờ</span>
               </div>
             </div>
             <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-              Ba bước này cần được tiến hành
-              <span className="font-semibold text-gray-800">
-                {" "}
-                đồng bộ và hỗ trợ lẫn nhau để phát huy tối đa sức mạnh đoàn kết quốc tế, nâng cao uy tín và vị thế của Việt Nam trên trường thế giới.
-              </span>
-              .
+              Các điều kiện cần được thực hiện đồng bộ, đi từ chính sách tới
+              truyền thông và hợp tác quốc tế.
             </p>
           </div>
         </div>
       </div>
+
+      <DetailModal
+        open={!!active}
+        onClose={() => setActive(null)}
+        item={active}
+      />
     </section>
   );
 };
