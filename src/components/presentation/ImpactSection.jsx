@@ -12,11 +12,10 @@ const ImpactSection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Ý nghĩa của sứ mệnh lịch sử
+            Ý nghĩa của đại đoàn kết dân tộc và đoàn kết quốc tế
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Tác động sâu sắc của sứ mệnh lịch sử đối với sự phát triển của nhân
-            loại
+            Đại đoàn kết dân tộc và đoàn kết quốc tế là nguồn sức mạnh quyết định thắng lợi và phát triển của cách mạng Việt Nam.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-teal-500 mx-auto rounded-full" />
         </div>
@@ -47,6 +46,17 @@ const ImpactSection = () => {
                     <p className="text-gray-600 leading-relaxed">
                       {impact.description}
                     </p>
+
+                    {/* CTA */}
+                    <div className="mt-5 flex items-center justify-center gap-3">
+                      <button
+                        onClick={() => setActive(impact)}
+                        className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-semibold shadow hover:brightness-95 transition focus:outline-none focus:ring-4 focus:ring-cyan-200"
+                        aria-label={`Xem chi tiết ${impact.title}`}
+                      >
+                        Xem chi tiết
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
