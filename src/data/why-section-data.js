@@ -81,8 +81,8 @@ Ví dụ:
     colorClass: "from-emerald-500 to-teal-500",
     sources: [
       {
-        title: "Vận dụng tư tưởng HCM về đoàn kết quốc tế trong bối cảnh hiện nay",
-        url: "https://www.studocu.vn/vn/document/truong-dai-hoc-kinh-te-thanh-pho-ho-chi-minh/tu-tuong-ho-chi-minh/vi-sao-phai-doan-ket-quoc-te-van-dung-tu-tuong-hcm-ve-doan-ket-quoc-te-trong-giai-doan-hien-nay/64172063",
+        title: "Cách mạng Việt Nam là bộ phận của cách mạng thế giới",
+        url: "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/ho-chi-minh/nghien-cuu-hoc-tap-tu-tuong/duong-cach-menh-2426",
       },
       {
         title: "Học viện Lục quân - Chuyên đề đoàn kết quốc tế",
