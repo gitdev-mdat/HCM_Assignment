@@ -79,11 +79,7 @@ Giúp người học:
 #### 💬 Floating Chat (Trợ lý AI)
 - Nút tròn ở góc dưới màn hình → click để mở chat  
 - Gõ câu hỏi (tiếng Việt), AI sẽ trả lời tức thì  
-- Nếu dùng **API Gemini**, có 2 cách cấu hình:  
-  1. Client demo: key đặt trong file `FloatingChatButton.jsx`  
-  2. Proxy server (khuyên dùng): ẩn key qua biến môi trường `GEMINI_API_KEY` trên Vercel  
 
-> ⚠️ *Lưu ý:* Nếu để key trên client, người khác có thể xem được → nên deploy qua proxy để **bảo mật hơn**  
 
 #### 📚 Tải eBook
 - Có nút hoặc QR ở phần **Hero** và **Footer** để tải file PDF  
@@ -171,10 +167,9 @@ Nếu mở rộng:
 → Nếu không phản hồi, thử hỏi ngắn hơn  
 
 📕 **Tải eBook:**  
-→ Quét QR hoặc nhấn link tải file PDF ở Hero/Footer  
+→ Quét QR hoặc nhấn link tải file PDF ở Hero/Footer  (https://heyzine.com/flip-book/4825bc2069.html)
 
 ---
 
 📩 *Liên hệ hỗ trợ (nếu cần):*  
-👉 **Nhóm thực hiện:** [Tên nhóm hoặc người phụ trách]  
-👉 **Email:** [Email liên hệ nếu có]
+👉 **Email:** [dattmse170508@fpt.edu.vn]
