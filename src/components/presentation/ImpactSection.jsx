@@ -1,22 +1,25 @@
 // src/components/presentation/ImpactSection.jsx
-import React from "react";
+import { useState } from "react";
 import { Globe, TrendingUp, Flag, Star, Users, Building2 } from "lucide-react";
 import { impacts, vietnamAchievements } from "../../data/impact-section-data";
+import ModalPortal from "../common/ModalPortal";
 
 const gradientPrimary = "from-cyan-500 to-teal-600";
 
 const ImpactSection = () => {
+  const [active, setActive] = useState(null);
+
   return (
+      
     <section className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Ý nghĩa của sứ mệnh lịch sử
+            Ý nghĩa của đại đoàn kết dân tộc và đoàn kết quốc tế
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-6">
-            Tác động sâu sắc của sứ mệnh lịch sử đối với sự phát triển của nhân
-            loại
+            Đại đoàn kết dân tộc và đoàn kết quốc tế là nguồn sức mạnh quyết định thắng lợi và phát triển của cách mạng Việt Nam.
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-cyan-400 to-teal-500 mx-auto rounded-full" />
         </div>
@@ -25,6 +28,7 @@ const ImpactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {impacts.map((impact) => {
             const IconComponent = impact.icon || Globe;
+
             return (
               <div
                 key={impact.id}
@@ -44,9 +48,21 @@ const ImpactSection = () => {
                     <h3 className="text-xl font-bold text-gray-800 mb-3">
                       {impact.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed" white-space: pre-line>
                       {impact.description}
                     </p>
+
+                    <div className="mt-5 flex items-center justify-between gap-3">
+                    <button
+                      onClick={() => setActive(impact)}
+                      className="px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-teal-600 text-white font-medium shadow hover:brightness-95 transition focus:outline-none focus:ring-4 focus:ring-cyan-200"
+                      aria-label={`Xem chi tiết ${impact.title}`}
+                    >
+                      Xem chi tiết
+                    </button>
+
+                    
+                  </div>
                   </div>
                 </div>
               </div>
@@ -193,6 +209,53 @@ const ImpactSection = () => {
           </div>
         </div>
       </div>
+      
+      <ModalPortal open={!!active}>
+  <div
+    className="fixed inset-0 z-[9999] flex items-center justify-center p-4"
+    role="dialog"
+    aria-modal="true"
+    onMouseDown={() => setActive(null)}
+  >
+    <div className="absolute inset-0 bg-black/40 backdrop-blur-[1px]" />
+    <div
+      className="relative z-[10000] w-full max-w-3xl rounded-2xl bg-white shadow-2xl border border-gray-200"
+      onMouseDown={(e) => e.stopPropagation()}
+    >
+      {/* Header */}
+      <div className="px-6 py-4 border-b border-gray-100 flex items-center gap-3">
+        <div className={`w-10 h-10 rounded-xl flex items-center justify-center text-white bg-gradient-to-br ${active?.color || "from-cyan-500 to-teal-600"}`}>
+          {active?.icon && <active.icon className="w-5 h-5 text-white" />}
+        </div>
+        <h3 className="text-lg font-semibold">{active?.title}</h3>
+      </div>
+
+      {/* Body */}
+      <div className="px-6 py-5 space-y-4">
+        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
+          {active?.fullText || active?.description}
+        </p>
+
+        {Array.isArray(active?.tags) && active.tags.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {active.tags.map((t, i) => (
+              <span key={i} className="px-2.5 py-1 rounded-full text-xs bg-gray-100 border">
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* Footer */}
+      <div className="px-6 py-4 border-t border-gray-100 flex justify-end">
+        <button onClick={() => setActive(null)} className="px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200">
+          Đóng
+        </button>
+      </div>
+    </div>
+  </div>
+</ModalPortal>
     </section>
   );
 };
