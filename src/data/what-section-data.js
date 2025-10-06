@@ -3,20 +3,18 @@ import { BookOpen, Building, DollarSign, Users } from "lucide-react";
 export const missions = [
   {
     id: "m1",
-    title: "Xây dựng liên minh cơ bản",
-    subtitle: "Tạo nền tảng xã hội - chính trị",
+    title: "Quán triệt tư tưởng và đường lối",
+    subtitle: "Quán triệt tư tưởng Hồ Chí Minh về đại đoàn kết",
     description:
-      "Xác lập liên minh giữa công nhân, nông dân, trí thức và các tầng lớp yêu nước — đảm bảo khối đại đoàn kết trong nước làm nền tảng cho mọi hoạt động chính trị, kinh tế và văn hóa.",
-    fullText: `Bước 1: Xây dựng liên minh cơ bản
-Mục tiêu của bước này là tập hợp các lực lượng xã hội có lợi ích chung để tạo nên một tiền tuyến rộng rãi cho sự nghiệp xây dựng và bảo vệ Tổ quốc.
-Nội dung thực hiện gồm:
-- Tuyên truyền, vận động các tầng lớp tham gia phong trào yêu nước.
-- Hoà giải, thu hút các lực lượng dân tộc nhỏ, người lao động và trí thức.
-- Xác định điểm chung lợi ích để làm nền tảng hợp tác lâu dài.
+      "Quán triệt tư tưởng Hồ Chí Minh và đường lối Đảng về đại đoàn kết là nền tảng không thể thiếu, tạo động lực và định hướng cho sự nghiệp xây dựng và bảo vệ đất nước.",
+    fullText: `
+Tuyên truyền sâu rộng tư tưởng Hồ Chí Minh về đại đoàn kết toàn dân, xem đây là chiến lược cơ bản, lâu dài, xuyên suốt trong mọi giai đoạn lịch sử và phát triển. Tập trung vào các giá trị cốt lõi như lòng yêu nước, nhân nghĩa, và đoàn kết, đảm bảo mọi tầng lớp nhân dân hiểu rõ ý nghĩa và tầm quan trọng của đại đoàn kết.
+Đặt ra các mục tiêu rõ ràng như độc lập dân tộc, dân chủ, phồn vinh, và hạnh phúc cho toàn dân, làm điểm tựa để tạo sự đồng thuận, động viên mọi lực lượng tham gia, từ công nhân, nông dân đến trí thức và các tầng lớp khác.
 
 Ví dụ thực tế:
-Sau cách mạng tháng Tám, việc tổ chức mặt trận rộng rãi đã tạo ra sức mạnh tổng hợp giúp ổn định tình hình chính trị và mở rộng lực lượng ủng hộ.`,
-    tags: ["Liên minh", "Xã hội", "Tuyên truyền"],
+- Thành lập Mặt trận Việt Minh (1941) dưới sự lãnh đạo của Hồ Chí Minh để tập hợp lực lượng chống thực dân Pháp, thể hiện tư tưởng đoàn kết từ sớm.
+- Đại hội XIII Đảng (2021) bổ sung phương châm đại đoàn kết trong Cương lĩnh xây dựng đất nước, khẳng định vai trò chiến lược.`,
+    tags: ["Tư tưởng Hồ Chí Minh", "Giáo dục chính trị", "Tuyên truyền"],
     icon: Users,
     // soft indigo → sky
     colorClass: "from-teal-400 to-cyan-500",
@@ -25,8 +23,12 @@ Sau cách mạng tháng Tám, việc tổ chức mặt trận rộng rãi đã t
     hasQuiz: false,
     sources: [
       {
-        title: "Tư liệu: Văn kiện Đảng về Mặt trận Dân tộc",
-        url: "https://example.com/source1",
+        title: "Giáo trình tư tưởng Hồ Chí Minh",
+        url: "https://dilib.vn/pdf/viewer.php?id=ead4ec",
+      },
+      {
+        title: "Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc",
+        url: "https://ldld.quangbinh.gov.vn/3cms/Ban-in-507.htm?art=13969217229087",
       },
     ],
     image:
@@ -35,23 +37,19 @@ Sau cách mạng tháng Tám, việc tổ chức mặt trận rộng rãi đã t
   },
   {
     id: "m2",
-    title: "Tổ chức Mặt trận và phong trào quần chúng",
-    subtitle: "Kết nối và huy động rộng rãi",
+    title: "Xây dựng nền tảng và mở rộng đoàn kết",
+    subtitle:
+      "Xây dựng liên minh công nhân, nông dân, trí thức và các tầng lớp khác",
     description:
-      "Tổ chức các hình thức quần chúng, mặt trận, đoàn thể để huy động sức người, sức của phục vụ mục tiêu độc lập, hòa bình và phát triển — đảm bảo tính đại diện và bền vững.",
-    fullText: `Bước 2: Tổ chức Mặt trận và phong trào quần chúng
-Nội dung chính:
-- Thiết lập cơ chế tổ chức: Mặt trận, đoàn thể, hiệp hội nghề nghiệp.
-- Vận động quần chúng tham gia các chương trình xã hội, kinh tế, văn hoá.
-- Bảo đảm tiếng nói đại diện của các nhóm xã hội trong chính sách.
-
-Lưu ý phương pháp:
-1. Làm sao để đảm bảo tính đại diện thực tế (không hình thức).
-2. Xây dựng kênh phản ánh và giám sát từ cơ sở.
-3. Phối hợp chặt chẽ giữa tổ chức quần chúng và cơ quan lãnh đạo chính trị.
-
-(Phần này thường rất thực tế: phải có chính sách, ngân sách nhỏ cho hoạt động, và đội ngũ điều phối.)`,
-    tags: ["Mặt trận", "Quần chúng", "Tổ chức"],
+      "Xây dựng nền tảng và mở rộng đoàn kết là bước quan trọng để tạo sức mạnh tổng hợp, đảm bảo sự tham gia của mọi tầng lớp vào sự nghiệp phát triển đất nước.",
+    fullText: `Xây dựng nền tảng: Tập trung xây dựng liên minh công nhân, nông dân, và trí thức làm gốc rễ cho khối đại đoàn kết, dựa trên nguyên tắc đoàn kết giai cấp và thống nhất mục tiêu.
+Mở rộng đoàn kết: Mở rộng sang các tầng lớp khác như doanh nhân, tôn giáo, dân tộc thiểu số, kiều bào, thông qua chính sách khoan dung, xóa bỏ thành kiến, và tạo điều kiện tham gia phát triển đất nước.
+Thực hiện dân chủ: Phát huy dân chủ, khuyến khích sự đa dạng nhưng thống nhất, thu hẹp khoảng cách giữa các nhóm để tăng cường sự gắn kết và đồng thuận.
+Ví dụ:
+- Hồ Chí Minh thành lập Mặt trận Việt Minh (1941) với liên minh công-nông-trí làm nền tảng chống thực dân.
+- Hiện nay, Nghị quyết 41-NQ/TW (2023) thúc đẩy vai trò doanh nhân trong đoàn kết kinh tế.
+- Các chương trình hỗ trợ đồng bào dân tộc thiểu số, như xóa đói giảm nghèo, thể hiện mở rộng đoàn kết.`,
+    tags: ["Liên minh", "Dân chủ", "Đoàn kết"],
     icon: Building,
     // đổi từ harsh rose→amber thành teal→cyan mềm hơn
     colorClass: "from-teal-400 to-cyan-500",
@@ -60,8 +58,8 @@ Lưu ý phương pháp:
     hasQuiz: false, // <-- đã tắt quiz cho mission này
     sources: [
       {
-        title: "Bài viết phân tích về tổ chức quần chúng",
-        url: "https://example.com/source2",
+        title: "Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc",
+        url: "https://ldld.quangbinh.gov.vn/3cms/Ban-in-507.htm?art=13969217229087",
       },
     ],
     image:
@@ -70,20 +68,14 @@ Lưu ý phương pháp:
   },
   {
     id: "m3",
-    title: "Bảo đảm chính sách và lãnh đạo",
-    subtitle: "Lãnh đạo chính trị và cơ chế bảo vệ",
-    description:
-      "Cần có cơ chế pháp lý, chính sách xã hội và sự lãnh đạo xuyên suốt để duy trì đoàn kết — việc này đảm bảo các mục tiêu lâu dài được thực hiện và bảo vệ lợi ích chung.",
-    fullText: `Bước 3: Bảo đảm chính sách và lãnh đạo
-Mục tiêu là tạo môi trường pháp lý và chính sách cho mọi hoạt động đoàn kết có hiệu quả.
-Nội dung:
-- Ban hành chính sách hỗ trợ các chương trình dân sinh.
-- Bảo đảm quyền lợi chính đáng của các tầng lớp tham gia.
-- Lãnh đạo, giám sát để tránh sai lệch và duy trì tính minh bạch.
-
-Ví dụ:
-Chính sách an sinh, giáo dục, chăm sóc y tế giúp giảm mâu thuẫn xã hội, tăng tính bền vững của liên minh.`,
-    tags: ["Chính sách", "Lãnh đạo", "Bền vững"],
+    title: "Giám sát, chống chia rẽ và đánh giá",
+    subtitle: ``,
+    description: `Chống âm mưu chia rẽ, chủ nghĩa cá nhân, thực hiện dân chủ để tạo đồng thuận.
+Định kỳ đánh giá, điều chỉnh để duy trì đoàn kết bền vững, hướng tới mục tiêu dân giàu nước mạnh.`,
+    fullText: `- Giám sát và thực hiện: Theo dõi chặt chẽ các hoạt động đoàn kết, đảm bảo thực hiện đúng chính sách Đảng và Nhà nước, phát huy vai trò Mặt trận Tổ quốc trong giám sát cộng đồng.
+- Chống chia rẽ: Ngăn chặn âm mưu chia rẽ từ bên ngoài và bên trong như chủ nghĩa cá nhân, tham nhũng, thông qua tuyên truyền và xử lý nghiêm các hành vi gây mất đoàn kết.
+- Đánh giá và điều chỉnh: Định kỳ đánh giá hiệu quả các phong trào đoàn kết, rút kinh nghiệm và điều chỉnh chính sách để duy trì sự bền vững, đáp ứng nhu cầu phát triển đất nước.`,
+    tags: ["Giám sát", "Phòng chống chia rẽ", "Bền vững"],
     icon: DollarSign,
     colorClass: "from-teal-400 to-cyan-500",
     tagBg: "bg-teal-50",
@@ -91,8 +83,12 @@ Chính sách an sinh, giáo dục, chăm sóc y tế giúp giảm mâu thuẫn x
     hasQuiz: false,
     sources: [
       {
-        title: "Văn kiện, chính sách liên quan",
-        url: "https://example.com/source3",
+        title: "Đại đoàn kết toàn dân tộc",
+        url: "https://www.tapchicongsan.org.vn/media-story/-/asset_publisher/V8hhp4dK31Gf/content/dai-doan-ket-toan-dan-toc-coi-nguon-cua-y-chi-niem-tin-suc-manh-de-xay-dung-bao-ve-to-quoc-trong-ky-nguyen-moi",
+      },
+      {
+        title: "Đấu tranh phòng, chống các âm mưu",
+        url: "https://lyluanchinhtri.vn/dau-tranh-phong-chong-cac-am-muu-thu-doan-loi-dung-phan-bien-xa-hoi-chong-pha-cach-mang-viet-nam-6496.html?utm_source=chatgpt.com",
       },
     ],
     image: "https://tttctt.1cdn.vn/thumbs/1200x630/2023/02/03/anh-2-8-.jpg",
