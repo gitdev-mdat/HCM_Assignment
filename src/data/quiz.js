@@ -1,236 +1,238 @@
 export const quiz = [
   {
     id: 1,
-    question: "Giai cấp công nhân là:",
+    question:
+      "Hồ Chí Minh khẳng định đại đoàn kết dân tộc có vai trò như thế nào trong sự nghiệp cách mạng?",
     options: {
-      A: "Những người sở hữu tư liệu sản xuất.",
-      B: "Những người trực tiếp vận hành tư liệu sản xuất công nghiệp hiện đại, không sở hữu chúng.",
-      C: "Những người làm nông nghiệp nhỏ lẻ.",
-      D: "Giới chủ doanh nghiệp.",
+      A: "Là nhiệm vụ trước mắt của từng giai đoạn",
+      B: "Là chiến lược, quyết định thành công của cách mạng",
+      C: "Là sách lược ngắn hạn của Đảng",
+      D: "Chỉ cần trong giai đoạn kháng chiến",
     },
     answer: "B",
   },
   {
     id: 2,
-    question: "“Sứ mệnh lịch sử” của giai cấp công nhân là:",
+    question: "Câu nói nổi tiếng của Hồ Chí Minh về sức mạnh đoàn kết là gì?",
     options: {
-      A: "Nhiệm vụ tạm thời trong một giai đoạn.",
-      B: "Chỉ đấu tranh để tăng lương.",
-      C: "Xóa bỏ chủ nghĩa tư bản, xây dựng xã hội mới vì sự giải phóng con người.",
-      D: "Lãnh đạo phong trào nông dân.",
+      A: "“Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao”",
+      B: "“Đoàn kết là sức mạnh vô địch”",
+      C: "“Đoàn kết, đoàn kết, đại đoàn kết. Thành công, thành công, đại thành công”",
+      D: "“Không có gì quý hơn độc lập, tự do”",
     },
     answer: "C",
   },
   {
     id: 3,
-    question:
-      "Ai là người đầu tiên nêu và phát triển học thuyết về sứ mệnh lịch sử của giai cấp công nhân?",
+    question: "Theo Hồ Chí Minh, nền tảng của khối đại đoàn kết dân tộc là gì?",
     options: {
-      A: "C. Mác và Ph. Ăngghen",
-      B: "V.I. Lênin",
-      C: "Hồ Chí Minh",
-      D: "Stalin",
+      A: "Liên minh công – nông – trí thức dưới sự lãnh đạo của Đảng",
+      B: "Liên minh công – thương nghiệp – địa chủ",
+      C: "Khối công nhân tiên tiến",
+      D: "Giai cấp nông dân và trí thức",
     },
     answer: "A",
   },
   {
     id: 4,
-    question: "Sứ mệnh lịch sử của giai cấp công nhân nhằm giải phóng:",
+    question: "Hình thức tổ chức cơ bản của khối đại đoàn kết dân tộc là gì?",
     options: {
-      A: "Chỉ giai cấp công nhân.",
-      B: "Chỉ nông dân.",
-      C: "Giai cấp công nhân và toàn nhân loại khỏi áp bức bóc lột.",
-      D: "Giai cấp tư sản.",
+      A: "Đảng Cộng sản Việt Nam",
+      B: "Chính quyền Nhà nước",
+      C: "Mặt trận dân tộc thống nhất",
+      D: "Công đoàn và các đoàn thể quần chúng",
     },
     answer: "C",
   },
   {
     id: 5,
     question:
-      "Đặc điểm nổi bật về chính trị – xã hội của giai cấp công nhân là:",
+      "Nguyên tắc hoạt động của Mặt trận dân tộc thống nhất theo Hồ Chí Minh là gì?",
     options: {
-      A: "Sống phân tán, khó liên kết.",
-      B: "Tính tổ chức và kỷ luật cao.",
-      C: "Sở hữu nhiều ruộng đất.",
-      D: "Không tham gia sản xuất.",
+      A: "Hoạt động theo tập trung quan liêu",
+      B: "Hiệp thương dân chủ, đoàn kết lâu dài, thật sự, chân thành",
+      C: "Đoàn kết ngắn hạn, tạm thời",
+      D: "Đoàn kết có điều kiện, đặt lợi ích Đảng lên trên hết",
     },
     answer: "B",
   },
   {
     id: 6,
-    question: "Cơ sở kinh tế để giai cấp công nhân có sứ mệnh lịch sử:",
+    question:
+      "Theo Hồ Chí Minh, điều kiện quan trọng để xây dựng khối đại đoàn kết dân tộc là gì?",
     options: {
-      A: "Sở hữu công cụ sản xuất.",
-      B: "Là lực lượng sản xuất tiên tiến, trực tiếp vận hành máy móc hiện đại.",
-      C: "Có thu nhập cao.",
-      D: "Không bị bóc lột.",
+      A: "Phát triển kinh tế thị trường định hướng XHCN",
+      B: "Kế thừa truyền thống yêu nước, nhân nghĩa, đoàn kết; có lòng khoan dung, độ lượng; tin vào nhân dân",
+      C: "Xây dựng quân đội cách mạng chính quy",
+      D: "Thực hiện cải cách ruộng đất",
     },
     answer: "B",
   },
   {
     id: 7,
-    question:
-      "Địa vị kinh tế – xã hội của giai cấp công nhân trong chủ nghĩa tư bản là:",
+    question: "Vai trò của đoàn kết quốc tế trong tư tưởng Hồ Chí Minh là gì?",
     options: {
-      A: "Giai cấp thống trị.",
-      B: "Giai cấp bị bóc lột giá trị thặng dư.",
-      C: "Giai cấp chủ nô.",
-      D: "Giai cấp địa chủ.",
+      A: "Tăng cường viện trợ kinh tế cho Việt Nam",
+      B: "Kết hợp sức mạnh dân tộc với sức mạnh thời đại, tạo sức mạnh tổng hợp cho cách mạng Việt Nam",
+      C: "Thay thế sức mạnh dân tộc trong cách mạng",
+      D: "Tạo cơ sở để hợp tác thương mại quốc tế",
     },
     answer: "B",
   },
   {
     id: 8,
     question:
-      "Khả năng lãnh đạo cách mạng của giai cấp công nhân bắt nguồn từ:",
+      "Theo Hồ Chí Minh, lực lượng nòng cốt của đoàn kết quốc tế là gì?",
     options: {
-      A: "Trình độ văn hóa cao hơn nông dân.",
-      B: "Tính tiên tiến, tổ chức và gắn liền với lực lượng sản xuất hiện đại.",
-      C: "Sở hữu tư bản.",
-      D: "Có nhiều đất đai.",
+      A: "Phong trào hòa bình và dân chủ thế giới",
+      B: "Phong trào cộng sản và công nhân quốc tế",
+      C: "Phong trào nhân dân Á – Phi",
+      D: "Các tổ chức phi chính phủ quốc tế",
     },
     answer: "B",
   },
   {
     id: 9,
     question:
-      "Để thực hiện sứ mệnh lịch sử, giai cấp công nhân cần có yếu tố nào?",
+      "Một trong những nguyên tắc quan trọng của đoàn kết quốc tế mà Hồ Chí Minh nêu ra là gì?",
     options: {
-      A: "Đảng Cộng sản lãnh đạo.",
-      B: "Vốn đầu tư lớn.",
-      C: "Vũ khí hiện đại.",
-      D: "Quyền lực kinh tế.",
+      A: "Đoàn kết trên cơ sở quyền lợi kinh tế trước mắt",
+      B: "Đoàn kết có lý, có tình, trên cơ sở thống nhất mục tiêu và lợi ích",
+      C: "Đoàn kết tạm thời để chống kẻ thù chung",
+      D: "Đoàn kết nhưng phụ thuộc hoàn toàn vào viện trợ",
     },
-    answer: "A",
+    answer: "B",
   },
   {
     id: 10,
-    question: "Liên minh cơ bản để thực hiện cách mạng xã hội chủ nghĩa là:",
+    question:
+      "Ba ngọn cờ mà Hồ Chí Minh luôn giương cao trong đoàn kết quốc tế là gì?",
     options: {
-      A: "Công – Nông – Trí thức",
-      B: "Công – Thương – Ngư",
-      C: "Công – Chủ",
-      D: "Công – Địa chủ",
+      A: "Độc lập dân tộc, dân chủ, hòa bình hữu nghị",
+      B: "Độc lập dân tộc, tự chủ, phát triển",
+      C: "Độc lập dân tộc, chủ nghĩa xã hội, hòa bình công lý",
+      D: "Độc lập dân tộc, công bằng xã hội, hợp tác quốc tế",
     },
-    answer: "A",
+    answer: "C",
   },
   {
     id: 11,
-    question: "Về kinh tế, sứ mệnh lịch sử của giai cấp công nhân là:",
+    question: "Hồ Chí Minh xem đại đoàn kết dân tộc là:",
     options: {
-      A: "Xóa bỏ chế độ tư hữu tư bản chủ nghĩa, thiết lập chế độ công hữu.",
-      B: "Duy trì chế độ tư hữu.",
-      C: "Xóa bỏ tất cả sở hữu cá nhân.",
-      D: "Phát triển doanh nghiệp tư nhân.",
+      A: "Nhiệm vụ chính trị trong một số thời kỳ",
+      B: "Vấn đề chiến lược, xuyên suốt của cách mạng",
+      C: "Nhiệm vụ mang tính tạm thời",
+      D: "Một sách lược linh hoạt theo tình hình",
     },
-    answer: "A",
+    answer: "B",
   },
   {
     id: 12,
-    question: "Về chính trị, sứ mệnh lịch sử của giai cấp công nhân là:",
+    question: "Lực lượng đại đoàn kết dân tộc theo Hồ Chí Minh bao gồm:",
     options: {
-      A: "Thành lập nhà nước của nhân dân lao động, dưới sự lãnh đạo của Đảng Cộng sản.",
-      B: "Thành lập nhà nước tư sản.",
-      C: "Giữ nguyên hệ thống cũ.",
-      D: "Chỉ đấu tranh đòi quyền lợi.",
+      A: "Chỉ giai cấp công nhân",
+      B: "Chỉ giai cấp nông dân và trí thức",
+      C: "Mọi con dân Việt Nam, không phân biệt dân tộc, tôn giáo, giai tầng",
+      D: "Chỉ cán bộ, đảng viên và quần chúng lao động",
     },
-    answer: "A",
+    answer: "C",
   },
   {
     id: 13,
-    question: "Về xã hội, sứ mệnh lịch sử của giai cấp công nhân là:",
+    question: "Điều kiện để thực hiện đoàn kết dân tộc là:",
     options: {
-      A: "Tạo ra khoảng cách giàu nghèo.",
-      B: "Xóa bỏ áp bức, bóc lột, xây dựng xã hội công bằng, dân chủ, văn minh.",
-      C: "Duy trì giai cấp.",
-      D: "Đánh thuế cao người giàu.",
+      A: "Tăng trưởng kinh tế nhanh",
+      B: "Lòng khoan dung, độ lượng với con người",
+      C: "Tập trung phát triển quân sự",
+      D: "Phát triển quan hệ quốc tế rộng mở",
     },
     answer: "B",
   },
   {
     id: 14,
-    question: "Về văn hóa – tư tưởng, giai cấp công nhân phải:",
+    question: "Hồ Chí Minh coi nhân dân là gì trong khối đại đoàn kết?",
     options: {
-      A: "Giữ nguyên tư tưởng tư sản.",
-      B: "Xây dựng hệ giá trị mới, phát triển con người toàn diện.",
-      C: "Loại bỏ toàn bộ văn hóa cũ.",
-      D: "Không quan tâm văn hóa.",
+      A: "Lực lượng bổ sung",
+      B: "Công cụ để huy động",
+      C: "Nền tảng, gốc rễ của khối đại đoàn kết",
+      D: "Một bộ phận cần định hướng",
+    },
+    answer: "C",
+  },
+  {
+    id: 15,
+    question: "Khẩu hiệu “Cầu đồng tồn dị” trong đoàn kết dân tộc có nghĩa là:",
+    options: {
+      A: "Gạt bỏ hoàn toàn mọi khác biệt",
+      B: "Chỉ tập trung vào điểm khác biệt",
+      C: "Tìm sự đồng thuận trong những điểm chung, tôn trọng sự khác biệt",
+      D: "Không thừa nhận đối lập",
+    },
+    answer: "C",
+  },
+  {
+    id: 16,
+    question:
+      "Tổ chức nào là hình thức cao nhất của khối đại đoàn kết dân tộc?",
+    options: {
+      A: "Chính quyền cách mạng",
+      B: "Các hội nghề nghiệp",
+      C: "Mặt trận dân tộc thống nhất",
+      D: "Các đoàn thể quần chúng",
+    },
+    answer: "C",
+  },
+  {
+    id: 17,
+    question: "Một nguyên tắc cơ bản của Mặt trận dân tộc thống nhất là:",
+    options: {
+      A: "Hoạt động theo nghị quyết Đảng mà không cần bàn bạc",
+      B: "Hoạt động theo hiệp thương dân chủ",
+      C: "Tập trung mọi quyền lực vào Ban lãnh đạo",
+      D: "Hoạt động theo phương thức mệnh lệnh hành chính",
     },
     answer: "B",
   },
   {
-    id: 15,
-    question: "Ở Việt Nam, giai cấp công nhân là:",
-    options: {
-      A: "Lực lượng chính trị tiên phong, nền tảng xã hội của Đảng Cộng sản Việt Nam.",
-      B: "Một giai cấp phụ thuộc.",
-      C: "Giai cấp trung gian.",
-      D: "Không có vai trò chính trị.",
-    },
-    answer: "A",
-  },
-  {
-    id: 16,
-    question: "Đặc điểm riêng của giai cấp công nhân Việt Nam so với thế giới:",
-    options: {
-      A: "Ra đời sớm hơn giai cấp tư sản dân tộc, có quan hệ mật thiết với nông dân, sớm tiếp thu chủ nghĩa Mác – Lênin.",
-      B: "Ra đời muộn hơn tất cả các giai cấp khác.",
-      C: "Không có liên hệ với nông dân.",
-      D: "Tập trung chủ yếu ở nông thôn.",
-    },
-    answer: "A",
-  },
-  {
-    id: 17,
-    question:
-      "Một phương hướng quan trọng để xây dựng giai cấp công nhân Việt Nam hiện nay là:",
-    options: {
-      A: "Đẩy mạnh đào tạo tay nghề, kỹ năng số cho công nhân.",
-      B: "Giảm lương công nhân.",
-      C: "Giảm vai trò công đoàn.",
-      D: "Thu hẹp liên minh công – nông – trí.",
-    },
-    answer: "A",
-  },
-  {
     id: 18,
     question:
-      "Yếu tố nào sau đây không phải giải pháp xây dựng giai cấp công nhân Việt Nam hiện nay?",
+      'Tại sao Hồ Chí Minh khẳng định "dân là gốc" trong đoàn kết dân tộc?',
     options: {
-      A: "Hoàn thiện chính sách tiền lương, phúc lợi.",
-      B: "Tuyên truyền giáo dục nâng cao nhận thức chính trị.",
-      C: "Khuyến khích công nhân tham gia đổi mới sáng tạo.",
-      D: "Giảm quyền lợi của công nhân để tiết kiệm ngân sách.",
+      A: "Vì dân đông nhất",
+      B: "Vì dân có khả năng lãnh đạo",
+      C: "Vì dân là chủ thể, là nguồn sức mạnh của khối đoàn kết",
+      D: "Vì dân có điều kiện vật chất tốt nhất",
     },
-    answer: "D",
+    answer: "C",
   },
   {
     id: 19,
-    question:
-      "Mục tiêu cao nhất của sứ mệnh lịch sử của giai cấp công nhân là:",
+    question: "Đoàn kết quốc tế theo Hồ Chí Minh giúp Việt Nam:",
     options: {
-      A: "Tăng năng suất lao động.",
-      B: "Giải phóng con người toàn diện.",
-      C: "Tăng thu nhập công nhân.",
-      D: "Mở rộng thị trường.",
+      A: "Có viện trợ kinh tế từ các nước lớn",
+      B: "Kết hợp sức mạnh dân tộc với sức mạnh thời đại",
+      C: "Thay thế đấu tranh dân tộc bằng hợp tác kinh tế",
+      D: "Tránh bị cô lập ngoại giao",
     },
     answer: "B",
   },
   {
     id: 20,
     question:
-      "Nội dung nào sau đây không thuộc sứ mệnh lịch sử của giai cấp công nhân?",
+      "Phong trào nào là lực lượng nòng cốt của đoàn kết quốc tế theo Hồ Chí Minh?",
     options: {
-      A: "Xóa bỏ chế độ tư bản chủ nghĩa.",
-      B: "Xây dựng xã hội cộng sản chủ nghĩa.",
-      C: "Bảo vệ và củng cố quyền thống trị của giai cấp tư sản.",
-      D: "Giải phóng con người khỏi áp bức bóc lột.",
+      A: "Phong trào công nhân và cộng sản quốc tế",
+      B: "Phong trào giải phóng dân tộc",
+      C: "Phong trào phụ nữ thế giới",
+      D: "Phong trào thanh niên quốc tế",
     },
-    answer: "C",
+    answer: "A",
   },
+
   {
     id: 21,
-    question: "Theo Hồ Chí Minh, đại đoàn kết dân tộc là vấn đề có ý nghĩa như thế nào?",
+    question:
+      "Theo Hồ Chí Minh, đại đoàn kết dân tộc là vấn đề có ý nghĩa như thế nào?",
     options: {
       A: "Vấn đề mang tính chiến thuật tạm thời.",
       B: "Vấn đề chiến lược, quyết định thành công của cách mạng.",
@@ -252,7 +254,8 @@ export const quiz = [
   },
   {
     id: 23,
-    question: "Theo Hồ Chí Minh, đại đoàn kết dân tộc phải được xây dựng trên cơ sở:",
+    question:
+      "Theo Hồ Chí Minh, đại đoàn kết dân tộc phải được xây dựng trên cơ sở:",
     options: {
       A: "Thỏa hiệp với đế quốc.",
       B: "Truyền thống yêu nước và tinh thần nhân ái của dân tộc.",
@@ -263,7 +266,8 @@ export const quiz = [
   },
   {
     id: 24,
-    question: "Hình thức tổ chức cụ thể của khối đại đoàn kết dân tộc ở Việt Nam là:",
+    question:
+      "Hình thức tổ chức cụ thể của khối đại đoàn kết dân tộc ở Việt Nam là:",
     options: {
       A: "Mặt trận dân tộc thống nhất.",
       B: "Công đoàn.",
@@ -318,7 +322,8 @@ export const quiz = [
   },
   {
     id: 29,
-    question: "Trong khối đại đoàn kết dân tộc, Hồ Chí Minh đặc biệt nhấn mạnh vai trò của:",
+    question:
+      "Trong khối đại đoàn kết dân tộc, Hồ Chí Minh đặc biệt nhấn mạnh vai trò của:",
     options: {
       A: "Giai cấp tư sản.",
       B: "Giai cấp địa chủ.",
@@ -373,7 +378,8 @@ export const quiz = [
   },
   {
     id: 34,
-    question: "Khối đoàn kết quốc tế rộng rãi nhất mà Hồ Chí Minh hướng tới là:",
+    question:
+      "Khối đoàn kết quốc tế rộng rãi nhất mà Hồ Chí Minh hướng tới là:",
     options: {
       A: "Mặt trận nhân dân Á – Phi đoàn kết với Việt Nam.",
       B: "Mặt trận nhân dân thế giới chống đế quốc, vì hòa bình, dân chủ và tiến bộ xã hội.",
@@ -406,7 +412,8 @@ export const quiz = [
   },
   {
     id: 37,
-    question: "Một trong những nguyên tắc đoàn kết quốc tế theo Hồ Chí Minh là:",
+    question:
+      "Một trong những nguyên tắc đoàn kết quốc tế theo Hồ Chí Minh là:",
     options: {
       A: "Tôn trọng độc lập, tự chủ của mỗi dân tộc.",
       B: "Đặt lợi ích quốc tế cao hơn lợi ích dân tộc.",
@@ -428,7 +435,8 @@ export const quiz = [
   },
   {
     id: 39,
-    question: "Khối đại đoàn kết dân tộc trong tư tưởng Hồ Chí Minh phải dựa trên:",
+    question:
+      "Khối đại đoàn kết dân tộc trong tư tưởng Hồ Chí Minh phải dựa trên:",
     options: {
       A: "Lợi ích dân tộc và quyền lợi cơ bản của nhân dân.",
       B: "Địa vị xã hội của từng tầng lớp.",
@@ -439,7 +447,8 @@ export const quiz = [
   },
   {
     id: 40,
-    question: "Câu nói nào thể hiện rõ quan điểm đoàn kết quốc tế của Hồ Chí Minh?",
+    question:
+      "Câu nói nào thể hiện rõ quan điểm đoàn kết quốc tế của Hồ Chí Minh?",
     options: {
       A: "Cách mạng Việt Nam là một bộ phận của cách mạng thế giới.",
       B: "Mỗi dân tộc phải tự giải quyết việc của mình.",
@@ -449,5 +458,3 @@ export const quiz = [
     answer: "A",
   },
 ];
-
-

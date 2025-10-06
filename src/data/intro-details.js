@@ -1,3 +1,4 @@
+// src/data/intro-details.js
 export const introDetails = [
   {
     id: "i1",
@@ -19,13 +20,17 @@ Nguồn tham khảo:
 - Văn kiện Đảng, sách giáo khoa lịch sử và các bài nghiên cứu chuyên ngành.`,
     tags: ["Toàn dân", "Toàn diện", "Bền vững"],
     sources: [
-      { title: "Văn kiện Đảng", url: "https://example.gov.vn/document1" },
       {
-        title: "Nghiên cứu chuyên ngành",
-        url: "https://example.edu.vn/paper1",
+        title:
+          "MOET — Tài liệu chương: Tư tưởng Hồ Chí Minh (văn bản hướng dẫn/giáo trình)",
+        url: "https://moet.gov.vn/van-ban/vbdh/Pages/chi-tiet-van-ban.aspx?ItemID=2729#divShowDialogDownload",
       },
     ],
-    color: "from-indigo-500 to-sky-500",
+    color: "from-cyan-500 to-teal-600",
+
+    image:
+      "https://nhn.1cdn.vn/2023/08/19/red-grey-modern-hiv-aids-health-infographic-800-2300-px-_page-0001.jpg",
+    imageAlt: "Cộng đồng đang hợp tác - minh hoạ đại đoàn kết dân tộc",
   },
   {
     id: "i2",
@@ -40,15 +45,20 @@ Nội dung chính:
 - Mục tiêu: tăng cường vị thế quốc gia, đóng góp cho phong trào tiến bộ quốc tế.
 
 Ví dụ thực tiễn:
-- Trao đổi học thuật, viện trợ phát triển, hoạt động ngoại giao đa phương.
-
-Nguồn tham khảo:
-- Báo cáo ngoại giao, bài nghiên cứu quốc tế.`,
-    tags: ["Chiến lược", "Cầu nối", "Ấm áp"],
+- Trao đổi học thuật, viện trợ phát triển, hoạt động ngoại giao đa phương.`,
+    tags: ["Chiến lược", "Cầu nối", "Hợp tác"],
     sources: [
-      { title: "Báo cáo ngoại giao", url: "https://example.gov.vn/report" },
-      { title: "Tạp chí quốc tế", url: "https://example.edu.vn/journal" },
+      {
+        title:
+          "Tạp chí Cộng sản — Vận dụng tư tưởng Hồ Chí Minh về đoàn kết, hợp tác quốc tế",
+        url: "https://www.tapchicongsan.org.vn/...",
+      },
     ],
-    color: "from-rose-500 to-orange-400",
+    color: "from-cyan-500 to-teal-600",
+    image:
+      "https://th.bing.com/th/id/R.a8f6ec1de361b909ae02f5c1278698e4?rik=Vdz6JvDkA70t2w&riu=http%3a%2f%2fvannghedanang.org.vn%2fapp%2fupload%2fpost%2f2016-09-19%2f20160919085218_tai_xuong.jpg&ehk=ZTKFmSiu8xThZDxVw%2b3samJN6N9wavKgCNEszEK5Wl0%3d&risl=&pid=ImgRaw&r=0",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
 ];
+
+export default introDetails;

@@ -15,6 +15,8 @@ tổ chức quốc tế. Thực hiện bằng chính sách ngoại giao độc l
       { title: "Báo cáo học thuật", url: "https://example.edu.vn/paper1" },
     ],
     color: "from-rose-500 to-amber-400",
+    image: "https://img.pikbest.com/origin/09/35/84/515pIkbEsTna8.jpg!bw700",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "c2",
@@ -29,6 +31,9 @@ Trong thực tế, nguyên tắc này thể hiện ở cách tiếp cận: tôn 
       { title: "Tạp chí Lý luận", url: "https://example.edu.vn/journal" },
     ],
     color: "from-blue-500 to-cyan-400",
+    image:
+      "https://tse1.mm.bing.net/th/id/OIP.6P9DWEUYuwCD8PrbhsotZwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "c3",
@@ -43,5 +48,7 @@ Trong thực tế, nguyên tắc này thể hiện ở cách tiếp cận: tôn 
     sources: [
       { title: "Báo cáo ngoại giao", url: "https://example.gov.vn/report" },
     ],
+    image: "https://tttctt.1cdn.vn/thumbs/1200x630/2023/02/03/anh-2-8-.jpg",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
 ];

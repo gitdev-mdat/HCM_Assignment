@@ -15,25 +15,41 @@ import qrEbook from "../../assets/qr.png";
 const Footer = () => {
   const references = [
     {
-      title: "Giáo trình Chủ nghĩa xã hội khoa học",
-      author: "Học viện Chính trị Quốc gia Hồ Chí Minh",
-      year: "2019",
+      title: "Giáo trình tư tuởng Hồ Chí Minh",
+      author: "thuviensach.vn",
+      year: "2025",
       type: "Giáo trình",
-      link: "https://moet.gov.vn/content/vanban/Lists/VBDH/Attachments/2730/GT%20h%E1%BB%8Dc%20ph%E1%BA%A7n%20Ch%E1%BB%A7%20ngh%C4%A9a%20x%C3%A3%20h%E1%BB%8Dc%20(C)%20Tr%20%C4%91%E1%BA%A7u%20-%20tr60.pdf",
+      link: "https://dilib.vn/pdf/viewer.php?id=ead4ec",
     },
   ];
 
   const teamMembers = [
-    { name: "Thi Minh Đạt", role: "Trưởng nhóm", id: "SE184167" },
+    {
+      name: "Thi Minh Đạt",
+      role: "Trưởng nhóm - Phát triển web",
+      id: "SE184167",
+    },
     { name: "Nguyễn Ngọc Bảo Phúc", role: "Làm Quiz", id: "SE184167" },
-    { name: "Nguyễn Long Nguyễn", role: "Nghiên cứu nội dung", id: "SE161940" },
+    {
+      name: "Nguyễn Long Nguyễn",
+      role: "Nghiên cứu nội dung - Tìm tài liệu",
+      id: "SE161940",
+    },
     {
       name: "Nguyễn Tuấn Kiệt",
       role: "Nghiên cứu nội dung và làm Ebook",
       id: "SE172079",
     },
-    { name: "Chu Hữu Phước", role: "Nghiên cứu nội dung", id: "SE172185" },
-    { name: "Trần Hải Long", role: "Nghiên cứu nội dung", id: "SE150884" },
+    {
+      name: "Chu Hữu Phước",
+      role: "Nghiên cứu nội dung - Tìm tài liệu",
+      id: "SE172185",
+    },
+    {
+      name: "Trần Hải Long",
+      role: "Nghiên cứu nội dung - Tìm tài liệu",
+      id: "SE150884",
+    },
   ];
 
   return (
