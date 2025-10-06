@@ -1,24 +1,26 @@
+🌺 HCM Assignment – Trang học tương tác Tư tưởng Hồ Chí Minh
 🚀 Project Setup & Usage
+1️⃣ Cách cài và chạy dự án (dành cho người dùng muốn thử chạy local)
 
-Cách cài và chạy dự án (dành cho người dùng muốn thử chạy local):
+Bước 1. Clone repo về máy:
 
-Clone repo về máy:
-
-git clone <https://github.com/gitdev-mdat/HCM_Assignment.git>
-cd <your-repo-folder>
+git clone https://github.com/gitdev-mdat/HCM_Assignment.git
+cd HCM_Assignment
 
 
-Cài đặt thư viện:
+Bước 2. Cài đặt thư viện:
 
 npm install
-# hoặc yarn
 
 
-Chạy trang web ở chế độ phát triển:
+Bước 3. Chạy trang web ở chế độ phát triển:
 
 npm run dev
-# trang sẽ mở ở http://localhost:5173 (hoặc terminal báo port khác)
 
+
+Trang sẽ tự mở ở http://localhost:5173
+
+(hoặc terminal sẽ báo port khác nếu bị trùng)
 
 (Tùy chọn) Build để deploy:
 
@@ -26,143 +28,164 @@ npm run build
 
 🔗 Deployed Web URL
 
-✍️ [https://hcm-assignment.vercel.app/]
+✍️ https://hcm-assignment.vercel.app/
 
 💻 Project Introduction
 a. Tổng quan
 
-Trang web là một trang học tương tác trình bày Tư tưởng Hồ Chí Minh về Đại đoàn kết dân tộc và Đoàn kết quốc tế. Mục tiêu: giúp người học đọc nội dung, xem video minh họa, đọc chi tiết từng phần, làm quiz kiểm tra, và hỏi trợ lý AI (chat) để giải đáp nhanh.
+Đây là trang web học tập tương tác trình bày chủ đề:
+“Tư tưởng Hồ Chí Minh về Đại đoàn kết dân tộc và Đoàn kết quốc tế”.
 
-b. Các chức năng chính & cách dùng (bằng ngôn ngữ đơn giản)
+🎯 Mục tiêu:
+Giúp người học:
 
-Trang chính / Hero
+Đọc nội dung và xem video minh họa
 
-Nút Khám phá ngay: cuộn xuống phần nội dung.
+Xem chi tiết từng phần lý thuyết
 
-Card QR: quét để tải eBook tham khảo.
+Làm bài Quiz kiểm tra kiến thức
 
-Intro (Giới thiệu khái niệm)
+Hỏi trợ lý AI để được giải đáp nhanh
 
-Mỗi thẻ (card) có tiêu đề, tóm tắt, thumbnail video (nếu có).
+b. Các chức năng chính (giải thích dễ hiểu)
+🏠 Trang chính (Hero)
 
-Nút Xem video: mở video YouTube trong modal.
+Nút "Khám phá ngay": cuộn xuống phần nội dung học.
 
-Nút Tìm hiểu thêm: mở modal chi tiết (DetailModal) chứa nội dung đầy đủ, ví dụ, nguồn tham khảo, tùy chọn Tải về (download dưới dạng .txt).
+QR Card: quét để tải eBook tham khảo.
 
-What / How / Why / Impact
+💡 Intro (Giới thiệu khái niệm)
 
-Các phần được trình bày bằng card, mỗi card có: tiêu đề, tóm tắt, tag (nhãn), nút Xem chi tiết.
+Mỗi thẻ (card) có: tiêu đề, tóm tắt, và thumbnail video.
 
-Nút Nguồn (nếu có) sẽ mở link tài liệu gốc trong tab mới.
+Nút “Xem video”: mở video YouTube trong popup.
 
-Modal Chi tiết (DetailModal)
+Nút “Tìm hiểu thêm”: mở cửa sổ chi tiết với nội dung, ví dụ, nguồn, và tùy chọn tải file .txt.
 
-Hiển thị nội dung đầy đủ, có phân đoạn để đọc dễ.
+📘 Phần What / How / Why / Impact
 
-Có nút Tải về để lưu nội dung dưới dạng file .txt.
+Các card trình bày từng khía cạnh (Cái gì – Làm thế nào – Tại sao – Tác động).
 
-Nhấn Esc hoặc click ngoài modal để đóng (khi đóng sẽ hỏi xác nhận nếu cần).
+Có tag (nhãn) và nút “Xem chi tiết” để mở nội dung đầy đủ.
 
-Video Modal (VideoModal)
+Nút Nguồn: mở tài liệu gốc (nếu có) trong tab mới.
 
-Mở video YouTube trực tiếp trong modal (không chuyển tab).
+📜 Detail Modal (Chi tiết nội dung)
 
-Quiz (Kiểm tra)
+Hiển thị toàn bộ nội dung và phân đoạn rõ ràng.
 
-Gồm 40 câu, thời gian 20 phút.
+Có nút Tải về (.txt) để đọc offline.
 
-Giao diện rõ ràng: bắt đầu / hủy / điều hướng câu trước - câu tiếp.
+Có thể đóng bằng phím Esc hoặc click ngoài modal.
 
-Sau nộp: hiển thị điểm, chi tiết từng câu (đáp án của bạn và đáp án đúng).
+🎥 Video Modal
 
-Lưu ý: đóng modal giữa chừng sẽ cảnh báo mất tiến độ.
+Mở video YouTube trực tiếp trong trang (không chuyển tab).
 
-Floating Chat (Trợ lý AI)
+🧠 Quiz (Bài kiểm tra)
 
-Nút tròn ở góc dưới màn hình — click để mở chat.
+40 câu hỏi, thời gian 20 phút.
 
-Gõ câu hỏi rồi gửi. AI sẽ trả lời bằng tiếng Việt.
+Giao diện rõ ràng: bắt đầu, hủy, qua lại câu trước/sau.
 
-Cấu hình API key: nếu dự án sử dụng theo phương án client-side (demo), key được đặt trực tiếp trong file src/components/common/FloatingChatButton.jsx (hằng GEMINI_KEY). Nếu sử dụng proxy server (an toàn hơn), cần đặt biến môi trường GEMINI_API_KEY trên serverless (Vercel).
+Sau khi nộp: hiển thị điểm và đáp án đúng/sai chi tiết.
 
-Cảnh báo: để key trên client = QUAN NGẠI bảo mật (mọi người nhìn thấy); nếu không rành, nhắn mình hướng dẫn cách deploy proxy (Vercel) để ẩn key.
+Nếu đóng giữa chừng → cảnh báo mất tiến trình.
 
-Tải eBook
+💬 Floating Chat (Trợ lý AI)
 
-Nút/Tấm QR ở hero và footer: quét/mở để tải eBook tham khảo.
+Nút tròn ở góc dưới màn hình → click để mở chat.
 
-Copy Tag (nếu bật)
+Gõ câu hỏi (tiếng Việt), AI sẽ trả lời tức thì.
 
-Một số tag có thể click để copy text của tag vào clipboard (giao diện có thông báo “Copied!”).
+Nếu dùng API Gemini, có 2 cách cấu hình:
 
-c. Điểm đặc biệt (Unique Features)
+Client demo: key đặt trong file FloatingChatButton.jsx
 
-Tích hợp Chat AI (Gemini): người dùng có thể hỏi trợ lý bằng tiếng Việt để giải thích khái niệm, yêu cầu trích nguồn, hoặc hỏi ví dụ minh họa.
+Proxy server (khuyên dùng): ẩn key qua biến môi trường GEMINI_API_KEY trên Vercel.
 
-Modal chi tiết có xuất file: người dùng có thể lưu nội dung để in/đọc offline.
+⚠️ Lưu ý: Nếu để key trên client, người khác có thể xem được.
+Nên deploy qua proxy để bảo mật hơn.
 
-Quiz 40 câu: kiểm tra toàn diện, có đồng hồ và chi tiết đáp án sau khi nộp.
+📚 Tải eBook
 
-FE-first (không bắt buộc backend): dữ liệu tĩnh/quiz/điểm lưu local dễ dùng cho mục đích học tập.
+Có nút hoặc QR ở phần Hero và Footer để tải file PDF.
 
-d. Công nghệ & cách triển khai (ngắn gọn, để người dùng hiểu)
+🔖 Copy Tag (nếu bật)
 
-Frontend: React (JSX) + Tailwind CSS
+Click vào tag để copy nội dung → hiện thông báo “Copied!”.
 
-Icons: lucide-react
+✨ Điểm đặc biệt (Unique Features)
 
-Media: YouTube embedded trong modal
+✅ Tích hợp Chat AI (Gemini) – hỏi/đáp nhanh bằng tiếng Việt
+✅ Modal chi tiết có xuất file .txt đọc offline
+✅ Quiz 40 câu có đồng hồ và đáp án chi tiết
+✅ Không cần backend (FE-first), dữ liệu tĩnh, dễ deploy
+✅ Giao diện trực quan, thân thiện cho người học
 
-Lưu trữ tạm (nếu cần): localStorage (không có backend trong bản demo)
+🧩 Công nghệ sử dụng
+Thành phần	Công nghệ
+Frontend	React (JSX), Tailwind CSS
+Icons	lucide-react
+Video	YouTube embed (trong modal)
+Lưu tạm	localStorage
+AI	Google Gemini API (Generative Language)
+🏗️ Kiến trúc & triển khai
 
-AI: Google Gemini (Generative Language API) — có thể gọi trực tiếp từ client (demo) hoặc qua một serverless proxy (khuyến nghị)
+Bản nộp hiện tại là frontend-only (không có backend).
+Nếu mở rộng:
 
-e. Kiến trúc dịch vụ & dữ liệu (nếu có backend)
+Có thể thêm serverless proxy (Vercel) để gọi Gemini an toàn.
 
-Hiện tại (bản nộp học tập): frontend-only, không có database.
-Nếu thêm backend: bạn có thể triển khai serverless (Vercel) để làm proxy gọi API Gemini (bảo mật key), hoặc thêm DB (Firestore / Postgres) để lưu điểm quiz, kết quả học tập, lịch sử người dùng.
+Hoặc tích hợp Firestore / PostgreSQL để lưu quiz và tiến trình học.
 
-🧠 Reflection (Phần suy nghĩ & phát triển thêm)
-a. Nếu có thêm thời gian, sẽ mở rộng:
+🧠 Reflection – Hướng phát triển trong tương lai
+a. Mở rộng chức năng
 
-Đồng bộ lịch & nhắc nhở (Google Calendar, push notification).
+Đồng bộ lịch học & nhắc nhở (Google Calendar, Push Notification)
 
-Tài khoản người dùng + lưu tiến trình học, lịch sử quiz.
+Tài khoản người dùng, lưu tiến trình học
 
-Thêm hình ảnh minh họa cho mỗi mục (gallery), infographics.
+Thêm hình minh họa, gallery, infographic
 
-Nâng cấp trải nghiệm mobile & accessibility (hỗ trợ đọc màn hình).
+Nâng cấp trải nghiệm mobile & hỗ trợ người khiếm thị
 
-b. Nếu mở rộng tích hợp AI:
+b. Nâng cấp AI
 
-Chuyển parsing AI sang server: gọi Gemini từ server (proxy) để ẩn API key, kiểm soát quota & log.
+Gọi Gemini qua server proxy để ẩn API key
 
-Dùng schema validation (JSON schema) để giảm hallucination — hiển thị preview cho người dùng trước khi lưu.
+Áp dụng JSON schema để hạn chế “hallucination”
 
-Tự động gợi ý trích nguồn/độ tin cậy nếu model trả lời không chắc chắn.
+Tự động hiển thị nguồn trích dẫn hoặc độ tin cậy câu trả lời
 
-✅ Checklist (dành cho người kiểm thử / nộp bài)
+✅ Checklist – Dành cho người kiểm thử / chấm bài
+Mục	Trạng thái
+Code chạy không lỗi (npm run dev)	✅
+Các chức năng chính hoạt động	✅
+Xem nội dung / Xem chi tiết / Mở video	✅
+Quiz: bắt đầu – nộp – xem kết quả	✅
+Chat AI hoạt động (nếu bật Gemini)	✅
+README & hướng dẫn hoàn chỉnh	✅
+Cảnh báo về API key client-side	✅
+❓ Hướng dẫn nhanh cho người không chuyên (FAQ)
 
- Code chạy không báo lỗi (npm run dev thành công).
+🖥️ Muốn xem video:
+→ Vào phần “Giới thiệu”, nhấn Xem video trên thẻ tương ứng.
 
- Tất cả chức năng chính hoạt động: Xem nội dung, Xem chi tiết, Mở video, Download nội dung.
+📖 Muốn đọc chi tiết:
+→ Nhấn Tìm hiểu thêm / Xem chi tiết → mở cửa sổ chi tiết.
+→ Có thể nhấn Tải về để lưu file.
 
- Quiz: bắt đầu, trả lời, nộp, xem kết quả.
+🧩 Muốn làm Quiz:
+→ Mở mục Quiz, nhấn Bắt đầu quiz, làm từng câu.
+→ Sau khi nộp sẽ hiển thị điểm & đáp án đúng.
 
- Chat AI: gửi câu hỏi, nhận trả lời (nếu bật Gemini).
+🤖 Muốn hỏi AI:
+→ Bấm nút chat (góc dưới màn hình), nhập câu hỏi, gửi.
+→ Nếu không phản hồi, thử hỏi ngắn hơn.
 
- Tài liệu (README hoặc hướng dẫn) đã hoàn chỉnh.
+📕 Tải eBook:
+→ Quét QR hoặc nhấn link tải file PDF ở Hero/Footer.
 
- (Nếu bật) Đã thông báo rõ rủi ro nếu để API key trên client.
-
-Hướng dẫn ngắn cho người dùng không chuyên (FAQ nhanh)
-
-Muốn xem video minh họa: vào phần Giới thiệu, nhấn Xem video trên card tương ứng.
-
-Muốn đọc chi tiết một mục: nhấn Tìm hiểu thêm hoặc Xem chi tiết, cửa sổ sẽ mở ra. Nhấn Tải về nếu muốn lưu.
-
-Muốn làm Quiz: mở Quiz (từ menu hoặc nút trên trang), nhấn Bắt đầu quiz, làm từng câu, cuối cùng nhấn Nộp bài.
-
-Muốn hỏi AI: bấm nút chat (góc dưới), gõ câu hỏi, gửi. Nếu không trả lời, thử viết lại ngắn gọn hơn.
-
-Tải eBook: quét QR hoặc nhấn link eBook để tải file PDF.
+📩 Liên hệ hỗ trợ (nếu cần):
+👉 Email: [dattmse170508@fpt.edu.vn]
