@@ -99,7 +99,7 @@ const HeroSection = () => {
               className="!bg-gradient-to-r !from-cyan-400 !to-teal-600 !text-white !shadow-lg"
             />
             <a
-              href="/ebook.pdf"
+              href="https://heyzine.com/flip-book/4825bc2069.html"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-lg border border-white/10 text-sm text-sky-50 hover:bg-white/6 transition focus:outline-none focus:ring-4 focus:ring-cyan-200"

@@ -29,6 +29,9 @@ Sau cách mạng tháng Tám, việc tổ chức mặt trận rộng rãi đã t
         url: "https://example.com/source1",
       },
     ],
+    image:
+      "https://th.bing.com/th/id/R.bffafb212459d993cb40398bd289586d?rik=teovNxx%2fJj%2bXZw&riu=http%3a%2f%2ftinhdoandaknong.org.vn%2fimages%2f10-2019%2fYThucTonTrongNhanDan-Copy.jpg&ehk=Jnyg5S729kfx8ML4hppHpZAzLn7FtyHu6QWtXPrr9Mw%3d&risl=&pid=ImgRaw&r=0",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "m2",
@@ -61,6 +64,9 @@ Lưu ý phương pháp:
         url: "https://example.com/source2",
       },
     ],
+    image:
+      "https://tse2.mm.bing.net/th/id/OIP.1PMPe9MNBd3r5AbZl0Dk5QHaEd?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "m3",
@@ -89,6 +95,8 @@ Chính sách an sinh, giáo dục, chăm sóc y tế giúp giảm mâu thuẫn x
         url: "https://example.com/source3",
       },
     ],
+    image: "https://tttctt.1cdn.vn/thumbs/1200x630/2023/02/03/anh-2-8-.jpg",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
 ];
 

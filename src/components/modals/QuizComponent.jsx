@@ -1,3 +1,4 @@
+// src/components/modals/QuizComponent.jsx
 import React, { useState, useEffect, useCallback } from "react";
 import {
   CheckCircle,
@@ -10,6 +11,19 @@ import {
   ArrowLeft,
 } from "lucide-react";
 import { quiz } from "../../data/quiz";
+
+/**
+ * QuizComponent
+ * - Theme: cyan / teal consistent
+ * - Styles: nicer spacing, consistent button heights, clearer selected option UI
+ * - Works with quiz array length (e.g. 40 questions)
+ */
+
+const ACCENT_FROM = "from-cyan-500";
+const ACCENT_TO = "to-teal-600";
+const ACCENT_BG = "bg-cyan-50";
+const ACCENT_TEXT = "text-cyan-700";
+const BTN_HEIGHT = "h-10";
 
 const QuizComponent = ({ isOpen, onClose }) => {
   const INITIAL_TIME = 20 * 60; // 20 phút in seconds
@@ -25,12 +39,21 @@ const QuizComponent = ({ isOpen, onClose }) => {
     if (quizStarted && !showResults && timeLeft > 0) {
       const timer = setTimeout(() => setTimeLeft((t) => t - 1), 1000);
       return () => clearTimeout(timer);
-    } else if (timeLeft === 0 && !showResults) {
+    } else if (timeLeft === 0 && !showResults && quizStarted) {
       handleSubmitQuiz();
     }
   }, [timeLeft, quizStarted, showResults]);
 
   // ESC to close (with confirm logic)
+  const resetQuiz = useCallback(() => {
+    setCurrentQuestion(0);
+    setSelectedAnswers({});
+    setShowResults(false);
+    setTimeLeft(INITIAL_TIME);
+    setQuizStarted(false);
+    setScore(0);
+  }, []);
+
   const confirmClose = useCallback(() => {
     const hasProgress =
       quizStarted && !showResults && Object.keys(selectedAnswers).length > 0;
@@ -42,7 +65,7 @@ const QuizComponent = ({ isOpen, onClose }) => {
     }
     resetQuiz();
     onClose?.();
-  }, [quizStarted, showResults, selectedAnswers, onClose]);
+  }, [quizStarted, showResults, selectedAnswers, onClose, resetQuiz]);
 
   useEffect(() => {
     function onKey(e) {
@@ -78,15 +101,6 @@ const QuizComponent = ({ isOpen, onClose }) => {
     setShowResults(true);
   };
 
-  const resetQuiz = useCallback(() => {
-    setCurrentQuestion(0);
-    setSelectedAnswers({});
-    setShowResults(false);
-    setTimeLeft(INITIAL_TIME);
-    setQuizStarted(false);
-    setScore(0);
-  }, []);
-
   const getScoreColor = () => {
     const percentage = (score / quiz.length) * 100;
     if (percentage >= 80) return "text-green-600";
@@ -118,12 +132,12 @@ const QuizComponent = ({ isOpen, onClose }) => {
       aria-label="Quiz modal"
       onClick={handleOverlayClick}
     >
-      {/* MODAL - NOTE: overflow-y-auto so long content scrolls and buttons stay reachable */}
+      {/* MODAL */}
       <div
         className="relative bg-white rounded-3xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* CLOSE BUTTON (top-right) - made highly visible */}
+        {/* CLOSE */}
         <button
           onClick={confirmClose}
           aria-label="Đóng quiz"
@@ -132,41 +146,49 @@ const QuizComponent = ({ isOpen, onClose }) => {
           <XCircle className="w-6 h-6" />
         </button>
 
-        {/* MAIN CONTENT WRAPPER */}
         <div className="flex flex-col">
           {!quizStarted && !showResults ? (
-            // Quiz Introduction
+            /* Intro */
             <div className="p-8 text-center">
-              <div className="bg-gradient-to-r from-red-600 to-red-700 text-white p-6 rounded-2xl mb-6">
-                <BookOpen className="w-14 h-14 mx-auto mb-3" />
+              <div
+                className={`rounded-2xl mb-6 p-6 text-white bg-gradient-to-r ${ACCENT_FROM} ${ACCENT_TO}`}
+              >
+                <BookOpen className="w-14 h-14 mx-auto mb-3 text-white" />
                 <h2 className="text-2xl md:text-3xl font-bold mb-1">
                   Quiz: Tư tưởng Hồ Chí Minh về đại đoàn kết dân tộc và đại đoàn
                   kết quốc tế
                 </h2>
-                <p className="text-red-100 text-sm">
-                  Kiểm tra nhanh kiến thức chính — làm xong xem ngay kết quả.
+                <p className="text-cyan-100 text-sm">
+                  Kiểm tra nhanh kiến thức chính — hoàn thành để xem kết quả
+                  ngay.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-                <div className="bg-blue-50 rounded-xl p-4 border border-blue-100">
-                  <Clock className="w-8 h-8 text-blue-600 mx-auto mb-2" />
+                <div className="rounded-xl p-4 border border-gray-100 shadow-sm">
+                  <Clock className="w-8 h-8 text-cyan-600 mx-auto mb-2" />
                   <h3 className="font-semibold text-gray-800">Thời gian</h3>
-                  <p className="text-blue-600">20 phút</p>
+                  <p className="text-cyan-600">20 phút</p>
                 </div>
-                <div className="bg-green-50 rounded-xl p-4 border border-green-100">
-                  <BookOpen className="w-8 h-8 text-green-600 mx-auto mb-2" />
+
+                <div className="rounded-xl p-4 border border-gray-100 shadow-sm">
+                  <BookOpen className="w-8 h-8 text-cyan-600 mx-auto mb-2" />
                   <h3 className="font-semibold text-gray-800">Số câu hỏi</h3>
-                  <p className="text-green-600">{quiz.length} câu</p>
+                  <p className="text-cyan-600">{quiz.length} câu</p>
                 </div>
-                <div className="bg-purple-50 rounded-xl p-4 border border-purple-100">
-                  <Award className="w-8 h-8 text-purple-600 mx-auto mb-2" />
-                  <h3 className="font-semibold text-gray-800">Điểm đạt</h3>
-                  <p className="text-purple-600">≥ 30/40</p>
+
+                <div className="rounded-xl p-4 border border-gray-100 shadow-sm">
+                  <Award className="w-8 h-8 text-cyan-600 mx-auto mb-2" />
+                  <h3 className="font-semibold text-gray-800">
+                    Điểm tham khảo
+                  </h3>
+                  <p className="text-cyan-600">
+                    ≥ {(quiz.length * 0.75) | 0}/{quiz.length}
+                  </p>
                 </div>
               </div>
 
-              <div className="bg-yellow-50 rounded-xl p-4 border border-yellow-200 mb-6 text-left">
+              {/* <div className="rounded-xl p-4 border border-gray-100 mb-6">
                 <h4 className="font-semibold text-gray-800 mb-2">Lưu ý:</h4>
                 <ul className="text-sm text-gray-600 space-y-1">
                   <li>• Mỗi câu chỉ có một đáp án đúng</li>
@@ -176,13 +198,12 @@ const QuizComponent = ({ isOpen, onClose }) => {
                     (Đóng cửa sổ khi chưa nộp sẽ mất tiến độ)
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
-              {/* Make sure start button is visible: center & not clipped */}
               <div className="flex gap-4 justify-center mb-2">
                 <button
                   onClick={() => setQuizStarted(true)}
-                  className="px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold rounded-xl flex items-center gap-2 transform transition-all duration-300 hover:scale-105"
+                  className={`px-8 py-3 bg-gradient-to-r ${ACCENT_FROM} ${ACCENT_TO} text-white font-bold rounded-xl flex items-center gap-2 transform transition-all duration-300 hover:scale-105 ${BTN_HEIGHT}`}
                 >
                   Bắt đầu quiz
                   <ArrowRight className="w-5 h-5" />
@@ -190,32 +211,32 @@ const QuizComponent = ({ isOpen, onClose }) => {
 
                 <button
                   onClick={confirmClose}
-                  className="px-8 py-4 border-2 border-gray-300 text-gray-600 hover:bg-gray-50 font-semibold rounded-xl transition-all duration-300"
+                  className={`px-8 py-3 border-2 border-gray-300 text-gray-700 font-semibold rounded-xl flex items-center gap-2 transform transition-all duration-300 hover:bg-gray-50 ${BTN_HEIGHT}`}
                 >
-                  Hủy bỏ
+                  Huỷ bỏ
                 </button>
               </div>
 
-              {/* Extra bottom spacing so button never clipped on small screens */}
               <div className="h-6" />
             </div>
           ) : showResults ? (
-            // Quiz Results
+            /* Results */
             <div className="p-8">
               <div className="text-center mb-8">
                 <div
                   className={`w-20 h-20 rounded-full mx-auto mb-4 flex items-center justify-center ${
-                    score >= quiz.length * 0.6 ? "bg-green-100" : "bg-red-100"
+                    score >= quiz.length * 0.6 ? "bg-emerald-50" : "bg-red-50"
                   }`}
                 >
                   <Award
                     className={`w-10 h-10 ${
                       score >= quiz.length * 0.6
-                        ? "text-green-600"
+                        ? "text-emerald-600"
                         : "text-red-600"
                     }`}
                   />
                 </div>
+
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
                   Kết quả bài quiz
                 </h2>
@@ -248,18 +269,19 @@ const QuizComponent = ({ isOpen, onClose }) => {
                         key={q.id}
                         className={`border rounded-lg p-4 ${
                           isCorrect
-                            ? "border-green-200 bg-green-50"
+                            ? "border-emerald-200 bg-emerald-50"
                             : "border-red-200 bg-red-50"
                         }`}
                       >
                         <div className="flex items-start gap-3">
                           <div className="flex-shrink-0 mt-1">
                             {isCorrect ? (
-                              <CheckCircle className="w-5 h-5 text-green-600" />
+                              <CheckCircle className="w-5 h-5 text-emerald-600" />
                             ) : (
                               <XCircle className="w-5 h-5 text-red-600" />
                             )}
                           </div>
+
                           <div className="flex-1">
                             <p className="font-medium text-gray-800 mb-2">
                               Câu {index + 1}: {q.question}
@@ -280,7 +302,7 @@ const QuizComponent = ({ isOpen, onClose }) => {
                                 </span>
                               </p>
                               {!isCorrect && (
-                                <p className="text-green-600 mt-1">
+                                <p className="text-emerald-600 mt-1">
                                   Đáp án đúng:{" "}
                                   <span className="font-semibold">
                                     {q.answer}. {q.options[q.answer]}
@@ -301,7 +323,7 @@ const QuizComponent = ({ isOpen, onClose }) => {
                   onClick={() => {
                     resetQuiz();
                   }}
-                  className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold rounded-xl flex items-center gap-2 transition-all duration-300"
+                  className="px-6 py-3 bg-gradient-to-r from-cyan-600 to-teal-700 hover:from-cyan-700 hover:to-teal-800 text-white font-semibold rounded-xl flex items-center gap-2 transition-all duration-300"
                 >
                   <RotateCcw className="w-5 h-5" />
                   Làm lại
@@ -315,18 +337,20 @@ const QuizComponent = ({ isOpen, onClose }) => {
               </div>
             </div>
           ) : (
-            // Quiz Questions
+            /* Questions UI */
             <div className="flex flex-col h-full">
               {/* Header */}
-              <div className="bg-gradient-to-r from-red-600 to-red-700 text-white pt-12 p-4 md:pt-14 md:p-6">
+              <div
+                className={`text-white pt-12 p-4 md:pt-14 md:p-6 rounded-t-3xl bg-gradient-to-r ${ACCENT_FROM} ${ACCENT_TO}`}
+              >
                 <div className="flex justify-between items-center">
-                  <div>
+                  <div className="w-full pr-4">
                     <h2 className="text-lg md:text-xl font-bold">
                       Câu {currentQuestion + 1}/{quiz.length}
                     </h2>
-                    <div className="w-full bg-red-800 rounded-full h-2 mt-2">
+                    <div className="w-full bg-white/20 rounded-full h-2 mt-3">
                       <div
-                        className="bg-yellow-400 h-2 rounded-full transition-all duration-300"
+                        className="bg-white h-2 rounded-full transition-all duration-300"
                         style={{
                           width: `${
                             ((currentQuestion + 1) / quiz.length) * 100
@@ -335,8 +359,9 @@ const QuizComponent = ({ isOpen, onClose }) => {
                       />
                     </div>
                   </div>
-                  <div className="text-right">
-                    <div className="flex items-center gap-2 text-yellow-300 mr-2">
+
+                  <div className="text-right ml-4">
+                    <div className="flex items-center gap-2 text-white">
                       <Clock className="w-5 h-5" />
                       <span className="font-mono text-lg">
                         {formatTime(timeLeft)}
@@ -358,10 +383,10 @@ const QuizComponent = ({ isOpen, onClose }) => {
                       ([key, value]) => (
                         <label
                           key={key}
-                          className={`block p-3 md:p-4 border-2 rounded-xl cursor-pointer transition-all duration-200 hover:bg-gray-50 ${
+                          className={`block p-3 md:p-4 border-2 rounded-xl cursor-pointer transition-all duration-200 hover:shadow-sm ${
                             selectedAnswers[quiz[currentQuestion].id] === key
-                              ? "border-red-500 bg-red-50"
-                              : "border-gray-200"
+                              ? "border-cyan-500 bg-cyan-50 shadow-sm"
+                              : "border-gray-200 bg-white"
                           }`}
                         >
                           <div className="flex items-center gap-3">
@@ -379,9 +404,16 @@ const QuizComponent = ({ isOpen, onClose }) => {
                                   key
                                 )
                               }
-                              className="w-5 h-5 text-red-600"
+                              className="w-5 h-5 text-cyan-600 accent-cyan-600"
                             />
-                            <span className="font-semibold text-red-600 min-w-[24px]">
+                            <span
+                              className={`font-semibold ${
+                                selectedAnswers[quiz[currentQuestion].id] ===
+                                key
+                                  ? "text-cyan-700"
+                                  : "text-gray-700"
+                              } min-w-[26px]`}
+                            >
                               {key}.
                             </span>
                             <span className="text-gray-800">{value}</span>
@@ -394,43 +426,53 @@ const QuizComponent = ({ isOpen, onClose }) => {
               </div>
 
               {/* Navigation */}
-              <div className="border-t p-4 md:p-6">
-                <div className="flex justify-between items-center">
-                  <button
-                    onClick={() =>
-                      setCurrentQuestion(Math.max(0, currentQuestion - 1))
-                    }
-                    disabled={currentQuestion === 0}
-                    className="px-3 md:px-4 py-2 border-2 border-gray-300 text-gray-600 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 flex items-center gap-2 transition-all duration-200"
-                  >
-                    <ArrowLeft className="w-4 h-4" />
-                    Câu trước
-                  </button>
-
-                  <div className="text-sm text-gray-600">
-                    Đã trả lời: {Object.keys(selectedAnswers).length}/
-                    {quiz.length}
+              <div className="border-t p-4 md:p-6 rounded-b-3xl bg-white">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-3">
+                  <div className="flex gap-2 w-full md:w-auto">
+                    <button
+                      onClick={() =>
+                        setCurrentQuestion(Math.max(0, currentQuestion - 1))
+                      }
+                      disabled={currentQuestion === 0}
+                      className="px-3 md:px-4 py-2 border-2 border-gray-300 text-gray-600 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 flex items-center gap-2 transition-all duration-200"
+                    >
+                      <ArrowLeft className="w-4 h-4" />
+                      Câu trước
+                    </button>
+                    <div className="hidden md:flex items-center px-3 py-2 rounded-lg text-sm text-gray-600 bg-gray-50 border border-gray-100">
+                      Đã trả lời:{" "}
+                      <span className="font-semibold ml-2">
+                        {Object.keys(selectedAnswers).length}/{quiz.length}
+                      </span>
+                    </div>
                   </div>
 
-                  {currentQuestion < quiz.length - 1 ? (
-                    <button
-                      onClick={() => setCurrentQuestion(currentQuestion + 1)}
-                      className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white rounded-lg font-semibold flex items-center gap-2 transition-all duration-200"
-                    >
-                      Câu tiếp
-                      <ArrowRight className="w-4 h-4" />
-                    </button>
-                  ) : (
-                    <button
-                      onClick={handleSubmitQuiz}
-                      disabled={
-                        Object.keys(selectedAnswers).length < quiz.length
-                      }
-                      className="px-6 py-2 bg-green-600 hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-all duration-200"
-                    >
-                      Nộp bài
-                    </button>
-                  )}
+                  <div className="flex items-center gap-3 w-full md:w-auto justify-end">
+                    <div className="md:hidden text-sm text-gray-600">
+                      Đã trả lời: {Object.keys(selectedAnswers).length}/
+                      {quiz.length}
+                    </div>
+
+                    {currentQuestion < quiz.length - 1 ? (
+                      <button
+                        onClick={() => setCurrentQuestion(currentQuestion + 1)}
+                        className="px-4 py-2 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-semibold flex items-center gap-2 transition-all duration-200"
+                      >
+                        Câu tiếp
+                        <ArrowRight className="w-4 h-4" />
+                      </button>
+                    ) : (
+                      <button
+                        onClick={handleSubmitQuiz}
+                        disabled={
+                          Object.keys(selectedAnswers).length < quiz.length
+                        }
+                        className="px-6 py-2 bg-teal-600 hover:bg-teal-700 disabled:bg-gray-400 disabled:cursor-not-allowed text-white rounded-lg font-semibold transition-all duration-200"
+                      >
+                        Nộp bài
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

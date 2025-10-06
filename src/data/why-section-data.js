@@ -31,6 +31,9 @@ Ví dụ minh họa:
         url: "https://hochiminh.vn/Uploads/2018/6/2/14/HO%20CHI%20MINH%20TOAN%20TAP%20-%20TAP%2015.pdf",
       },
     ],
+    image:
+      "https://th.bing.com/th/id/R.17e52aa6c1d5c2f5a2d6d2a773419417?rik=Hq1LjKf7%2ft2e7g&riu=http%3a%2f%2fhochiminh.vn%2fUploads%2f2020%2f5%2f6%2f20%2ftu-tuong-ho-chi-minh-ve-dai-doan-ket-dan-toc-2-214623.jpg&ehk=PYDswIPMDXKz%2b%2bFX4t5qi%2fhujeUAR37sIKUlt75tBqc%3d&risl=&pid=ImgRaw&r=0",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "r2",
@@ -52,14 +55,19 @@ Ví dụ:
     colorClass: "from-teal-400 to-cyan-500",
     sources: [
       {
-        title: "Đại đoàn kết dân tộc là vấn đề có ý nghĩa chiến lược, quyết định đối với sự nghiệp cách mạng",
+        title:
+          "Đại đoàn kết dân tộc là vấn đề có ý nghĩa chiến lược, quyết định đối với sự nghiệp cách mạng",
         url: "https://www.hcmcpv.org.vn/tin-tuc/tu-tuong-ho-chi-minh-ve-dai-doan-ket-%E2%80%93-anh-duoc-soi-duong-cho-cach-mang-viet-nam-1491865234",
       },
       {
-        title: "Đại đoàn kết toàn dân là đường lối chiến lược của cách mạng Việt Nam",
+        title:
+          "Đại đoàn kết toàn dân là đường lối chiến lược của cách mạng Việt Nam",
         url: "https://binhphuoc.gov.vn/vi/news/hoc-tap-va-lam-theo-bac/tu-tuong-ho-chi-minh-ve-dai-doan-ket-toan-dan-toc-31081.html",
       },
     ],
+    image:
+      "https://th.bing.com/th/id/R.a8f6ec1de361b909ae02f5c1278698e4?rik=Vdz6JvDkA70t2w&riu=http%3a%2f%2fvannghedanang.org.vn%2fapp%2fupload%2fpost%2f2016-09-19%2f20160919085218_tai_xuong.jpg&ehk=ZTKFmSiu8xThZDxVw%2b3samJN6N9wavKgCNEszEK5Wl0%3d&risl=&pid=ImgRaw&r=0",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "r3",
@@ -89,6 +97,9 @@ Ví dụ:
         url: "https://hvlq.vn/trang-chu/hoc-tap-va-lam-theo-tu-tuong-dao-duc-phong-cach-ho-chi-minh/tu-tuong-ho-chi-minh/tu-tuong-cua-chu-tich-ho-chi-minh-ve-doan-ket-quoc-te2.html",
       },
     ],
+    image:
+      "https://tse2.mm.bing.net/th/id/OIP.0jN4NVEvDZNDF-U0cslgkwHaE7?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
   {
     id: "r4",
@@ -110,7 +121,8 @@ Ví dụ:
     colorClass: "from-violet-500 to-indigo-500",
     sources: [
       {
-        title: "Đại đoàn kết dân tộc - Động lực chủ yếu phát huy sức mạnh Nhân dân trong giai đoạn hiện nay",
+        title:
+          "Đại đoàn kết dân tộc - Động lực chủ yếu phát huy sức mạnh Nhân dân trong giai đoạn hiện nay",
         url: "https://mattran.org.vn/hoat-dong/dai-doan-ket-dan-toc-dong-luc-chu-yeu-phat-huy-suc-manh-nhan-dan-trong-giai-doan-hien-nay-55174.html",
       },
       {
@@ -118,6 +130,9 @@ Ví dụ:
         url: "https://tulieuvankien.dangcongsan.vn/Uploads/2018/6/2/14/HO%20CHI%20MINH%20TOAN%20TAP%20-%20TAP%2011.pdf",
       },
     ],
+    image:
+      "https://th.bing.com/th/id/OIP.Xw8pKtlbW9uyXpql9mtoEAHaEr?w=290&h=183&c=7&r=0&o=7&cb=12&dpr=1.3&pid=1.7&rm=3",
+    imageAlt: "Giao lưu quốc tế - minh hoạ đoàn kết quốc tế",
   },
 ];
 
